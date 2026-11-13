@@ -20,7 +20,7 @@ final class MessageStore {
     private let context: ModelContext?
 
     private init() {
-        guard let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.bark") else {
+        guard let groupURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.piiziy.homepush") else {
             context = nil
             return
         }

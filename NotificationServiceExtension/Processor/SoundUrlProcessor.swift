@@ -12,7 +12,7 @@ import Foundation
 
 class SoundUrlProcessor: NotificationContentProcessor {
     /// Same shared folder as imported sounds; iOS looks up notification sounds here.
-    let soundsDirectoryUrl = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.bark")?.appendingPathComponent("Library/Sounds")
+    let soundsDirectoryUrl = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.piiziy.homepush")?.appendingPathComponent("Library/Sounds")
 
     /// Only CAF is supported, same as sounds imported in the app.
     static let fileExtension = "caf"

@@ -18,7 +18,7 @@ enum WatchImageCache {
 
     static var directoryUrl: URL? {
         guard let groupUrl = FileManager.default.containerURL(
-            forSecurityApplicationGroupIdentifier: "group.bark"
+            forSecurityApplicationGroupIdentifier: "group.com.piiziy.homepush"
         ) else {
             return nil
         }

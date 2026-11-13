@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-let defaultServer = "https://api.day.app"
+let defaultServer = "https://push.example.com"
 
 class Server: Codable {
     let id: String

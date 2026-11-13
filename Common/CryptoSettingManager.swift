@@ -10,7 +10,7 @@ import Foundation
 
 class CryptoSettingManager: NSObject {
     nonisolated(unsafe) static let shared = CryptoSettingManager()
-    let defaults = UserDefaults(suiteName: "group.bark")
+    let defaults = UserDefaults(suiteName: "group.com.piiziy.homepush")
     var fields: CryptoSettingFields? {
         get {
             guard let data:Data =  defaults?.value(forKey: "cryptoSettingFields") as? Data else {
