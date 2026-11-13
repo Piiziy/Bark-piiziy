@@ -126,6 +126,7 @@ func getCommonToolOpts() []mcp.ToolOption {
 		mcp.WithString("sound", mcp.Description("Notification sound")),
 		mcp.WithString("icon", mcp.Description("Notification icon URL")),
 		mcp.WithString("image", mcp.Description("Notification image URL")),
+		mcp.WithString("video", mcp.Description("Notification video URL (mp4/mov), playable when the notification is expanded")),
 		mcp.WithString("group", mcp.Description("Notification group")),
 		mcp.WithString("isArchive", mcp.Description("Set to '1' to save the notification or any other value to skip saving")),
 		mcp.WithNumber("ttl", mcp.Description("Time to live in seconds for archived messages; expired items are automatically deleted")),

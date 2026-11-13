@@ -251,6 +251,8 @@ func push(params map[string]interface{}) (int, error) {
 		return 400, fmt.Errorf("device key is empty")
 	}
 
+	applyGroupIcon(&msg)
+
 	if msg.IsEmptyAlert() {
 		// For encrypted push notifications, a Body is required; otherwise, APNs will discard the notification
 		msg.Body = "Empty Message"

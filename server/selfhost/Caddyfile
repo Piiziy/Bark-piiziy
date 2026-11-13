@@ -1,0 +1,39 @@
+{
+	email {$ACME_EMAIL}
+}
+
+{$BARK_DOMAIN} {
+	encode gzip
+
+	# Emoji / custom icons: https://<domain>/icons/house.png
+	handle_path /icons/* {
+		root * /srv/icons
+		header Cache-Control "public, max-age=86400"
+		file_server
+	}
+
+	# Optional: images / videos you want to reference from the "image" / "video"
+	# fields. Drop files into ./media and use https://<domain>/media/<file>.
+	handle_path /media/* {
+		root * /srv/media
+		file_server
+	}
+
+	handle {
+		reverse_proxy bark-server:8080
+	}
+
+	# Basic hardening
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		-Server
+	}
+	request_body {
+		max_size 64KB
+	}
+	log {
+		output stdout
+		format console
+	}
+}

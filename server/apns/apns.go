@@ -5,6 +5,7 @@ import (
 	"crypto/x509"
 	"fmt"
 	"net/http"
+	"os"
 	"runtime"
 	"strings"
 	"time"
@@ -39,19 +40,66 @@ func (p PushMessage) IsDelete() bool {
 	return val == "1" || val == 1 || val == 1.0
 }
 
-const (
-	topic          = "me.fin.bark"
-	watchOSTopic   = "me.fin.bark.watch"
-	keyID          = "LH4T9V5U4R"
-	teamID         = "5U8LBRXG3A"
-	PayloadMaximum = 4096
+const PayloadMaximum = 4096
+
+// Config holds the APNs credentials. Nothing secret is compiled into the binary:
+// every value comes from flags / environment variables (see main.go).
+type Config struct {
+	// PEM contents of the .p8 auth key. Takes precedence over KeyFile.
+	Key string
+	// Path to the .p8 auth key file.
+	KeyFile string
+	KeyID   string
+	TeamID  string
+	// Bundle ID of the iOS app, e.g. com.piiziy.homepush
+	Topic string
+	// Bundle ID of the watchOS app. Defaults to Topic + ".watch".
+	WatchTopic string
+	// Use the APNs sandbox (development builds installed from Xcode).
+	// TestFlight / App Store builds use production.
+	Sandbox bool
+	// Size of the APNs client pool.
+	MaxClients int
+}
+
+var (
+	cfg     Config
+	clients = make(chan *apns2.Client, 1)
 )
 
-var clients = make(chan *apns2.Client, 1)
-
-// Initialize APNS client pool
-func init() {
-	ReCreateAPNS(1)
+// Configure validates cfg and (re)creates the APNs client pool.
+func Configure(c Config) error {
+	if c.Key == "" && c.KeyFile != "" {
+		b, err := os.ReadFile(c.KeyFile)
+		if err != nil {
+			return fmt.Errorf("read APNs key file: %w", err)
+		}
+		c.Key = string(b)
+	}
+	var missing []string
+	if strings.TrimSpace(c.Key) == "" {
+		missing = append(missing, "BARK_APNS_KEY or BARK_APNS_KEY_FILE")
+	}
+	if c.KeyID == "" {
+		missing = append(missing, "BARK_APNS_KEY_ID")
+	}
+	if c.TeamID == "" {
+		missing = append(missing, "BARK_APNS_TEAM_ID")
+	}
+	if c.Topic == "" {
+		missing = append(missing, "BARK_APNS_TOPIC")
+	}
+	if len(missing) > 0 {
+		return fmt.Errorf("missing APNs configuration: %s", strings.Join(missing, ", "))
+	}
+	if c.WatchTopic == "" {
+		c.WatchTopic = c.Topic + ".watch"
+	}
+	if c.MaxClients < 1 {
+		c.MaxClients = 1
+	}
+	cfg = c
+	return ReCreateAPNS(c.MaxClients)
 }
 
 func ReCreateAPNS(maxClientCount int) error {
@@ -59,9 +107,9 @@ func ReCreateAPNS(maxClientCount int) error {
 		return fmt.Errorf("invalid number of clients")
 	}
 
-	authKey, err := token.AuthKeyFromBytes([]byte(apnsPrivateKey))
+	authKey, err := token.AuthKeyFromBytes([]byte(cfg.Key))
 	if err != nil {
-		logger.Fatalf("failed to create APNS auth key: %v", err)
+		return fmt.Errorf("failed to create APNS auth key: %w", err)
 	}
 
 	var rootCAs *x509.CertPool
@@ -70,7 +118,7 @@ func ReCreateAPNS(maxClientCount int) error {
 	} else {
 		rootCAs, err = x509.SystemCertPool()
 		if err != nil {
-			logger.Fatalf("failed to get rootCAs: %v", err)
+			return fmt.Errorf("failed to get rootCAs: %w", err)
 		}
 	}
 
@@ -78,14 +126,19 @@ func ReCreateAPNS(maxClientCount int) error {
 		rootCAs.AppendCertsFromPEM([]byte(ca))
 	}
 
-	clients = make(chan *apns2.Client, maxClientCount)
+	host := apns2.HostProduction
+	if cfg.Sandbox {
+		host = apns2.HostDevelopment
+	}
+
+	newClients := make(chan *apns2.Client, maxClientCount)
 
 	for i := 0; i < min(runtime.NumCPU(), maxClientCount); i++ {
 		client := &apns2.Client{
 			Token: &token.Token{
 				AuthKey: authKey,
-				KeyID:   keyID,
-				TeamID:  teamID,
+				KeyID:   cfg.KeyID,
+				TeamID:  cfg.TeamID,
 			},
 			HTTPClient: &http.Client{
 				Transport: &http2.Transport{
@@ -96,13 +149,14 @@ func ReCreateAPNS(maxClientCount int) error {
 				},
 				Timeout: apns2.HTTPClientTimeout,
 			},
-			Host: apns2.HostProduction,
+			Host: host,
 		}
 		logger.Infof("create apns client: %d", i)
-		clients <- client
+		newClients <- client
 	}
+	clients = newClients
 
-	logger.Info("init apns client success...")
+	logger.Infof("init apns client success (topic=%s, host=%s)", cfg.Topic, host)
 	return nil
 }
 
@@ -134,9 +188,9 @@ func Push(msg *PushMessage) (code int, err error) {
 	client := <-clients // grab a client from the pool
 	clients <- client   // add the client back to the pool
 
-	notificationTopic := topic
+	notificationTopic := cfg.Topic
 	if msg.DeviceType == "watchos" {
-		notificationTopic = watchOSTopic
+		notificationTopic = cfg.WatchTopic
 	}
 
 	resp, err := client.Push(&apns2.Notification{

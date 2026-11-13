@@ -1,0 +1,8 @@
+{
+  "home": { "icon": "https://push.example.com/icons/house.png" },
+  "security": { "icon": "https://push.example.com/icons/rotating_light.png" },
+  "person": { "icon": "https://push.example.com/icons/bust_in_silhouette.png" },
+  "door": { "icon": "https://push.example.com/icons/door.png" },
+  "warning": { "icon": "https://push.example.com/icons/warning.png" },
+  "*": { "icon": "https://push.example.com/icons/bell.png" }
+}

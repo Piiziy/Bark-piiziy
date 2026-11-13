@@ -46,6 +46,21 @@ func main() {
 	}
 }
 func runServer(c *cli.Context) error {
+	if err := apns.Configure(apns.Config{
+		Key:        c.String("apns-key"),
+		KeyFile:    c.String("apns-key-file"),
+		KeyID:      c.String("apns-key-id"),
+		TeamID:     c.String("apns-team-id"),
+		Topic:      c.String("apns-topic"),
+		WatchTopic: c.String("apns-watch-topic"),
+		Sandbox:    c.Bool("apns-sandbox"),
+		MaxClients: c.Int("max-apns-client-count"),
+	}); err != nil {
+		return err
+	}
+	if err := initGroupIcons(c); err != nil {
+		return err
+	}
 	network := determineNetwork(c)
 	fiberApp := createFiberApp(c, network)
 	setupRouter(c, fiberApp)
@@ -94,6 +109,7 @@ func customErrorHandler(c *fiber.Ctx, err error) error {
 // authentication and routes
 func setupRouter(c *cli.Context, fiberApp *fiber.App) {
 	fiberRouter := fiberApp.Group(c.String("url-prefix"))
+	authEnabled = c.String("user") != "" || c.String("password") != ""
 	routerAuth(c.String("user"), c.String("password"), fiberRouter, c.String("url-prefix"))
 	routerSetup(fiberRouter)
 }
@@ -292,7 +308,46 @@ func getAppFlags() []cli.Flag {
 			Usage:   "Maximum number of APNs client connections",
 			EnvVars: []string{"BARK_SERVER_MAX_APNS_CLIENT_COUNT"},
 			Value:   1,
-			Action:  func(ctx *cli.Context, v int) error { return apns.ReCreateAPNS(v) },
+		},
+		&cli.StringFlag{
+			Name:    "apns-key-file",
+			Usage:   "Path to the APNs auth key (.p8). Never commit this file.",
+			EnvVars: []string{"BARK_APNS_KEY_FILE"},
+		},
+		&cli.StringFlag{
+			Name:    "apns-key",
+			Usage:   "APNs auth key (.p8) PEM contents; alternative to --apns-key-file",
+			EnvVars: []string{"BARK_APNS_KEY"},
+		},
+		&cli.StringFlag{
+			Name:    "apns-key-id",
+			Usage:   "APNs auth key ID (10 characters)",
+			EnvVars: []string{"BARK_APNS_KEY_ID"},
+		},
+		&cli.StringFlag{
+			Name:    "apns-team-id",
+			Usage:   "Apple Developer Team ID",
+			EnvVars: []string{"BARK_APNS_TEAM_ID"},
+		},
+		&cli.StringFlag{
+			Name:    "apns-topic",
+			Usage:   "Bundle ID of the iOS app, e.g. com.piiziy.homepush",
+			EnvVars: []string{"BARK_APNS_TOPIC"},
+		},
+		&cli.StringFlag{
+			Name:    "apns-watch-topic",
+			Usage:   "Bundle ID of the watchOS app (default: <apns-topic>.watch)",
+			EnvVars: []string{"BARK_APNS_WATCH_TOPIC"},
+		},
+		&cli.BoolFlag{
+			Name:    "apns-sandbox",
+			Usage:   "Use the APNs sandbox (apps installed directly from Xcode). TestFlight uses production.",
+			EnvVars: []string{"BARK_APNS_SANDBOX"},
+		},
+		&cli.StringFlag{
+			Name:    "group-icons",
+			Usage:   "JSON file mapping notification group -> default icon (default: <data>/group-icons.json)",
+			EnvVars: []string{"BARK_GROUP_ICONS_FILE"},
 		},
 		&cli.IntFlag{
 			Name:    "concurrency",

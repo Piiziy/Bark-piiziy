@@ -1,0 +1,4 @@
+selfhost/data
+selfhost/secrets
+selfhost/caddy_*
+selfhost/.env

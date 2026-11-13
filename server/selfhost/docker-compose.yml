@@ -1,0 +1,47 @@
+# Self-hosted Bark: bark-server behind Caddy (automatic HTTPS).
+# Usage: cp .env.example .env && edit .env && docker compose up -d --build
+services:
+  bark-server:
+    build:
+      context: ..
+      dockerfile: selfhost/Dockerfile
+    image: homepush/bark-server:local
+    container_name: bark-server
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      BARK_SERVER_ADDRESS: 0.0.0.0:8080
+      BARK_SERVER_DATA_DIR: /data
+      BARK_APNS_KEY_FILE: /run/secrets/apns_key.p8
+      # Trust the client IP Caddy forwards (used in logs)
+      BARK_SERVER_PROXY_HEADER: X-Forwarded-For
+    volumes:
+      - ./data:/data
+      - ./secrets/apns_key.p8:/run/secrets/apns_key.p8:ro
+    # No "ports:" on purpose - 8080 is reachable only from Caddy on the internal network.
+    expose:
+      - "8080"
+    mem_limit: 128m
+
+  caddy:
+    image: caddy:2.10-alpine
+    container_name: caddy
+    restart: unless-stopped
+    depends_on:
+      - bark-server
+    env_file: .env
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./icons:/srv/icons:ro
+      - ./media:/srv/media:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    mem_limit: 128m
+
+volumes:
+  caddy_data:
+  caddy_config:
