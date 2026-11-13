@@ -17,6 +17,7 @@ enum NotificationContentProcessorItem {
     case archive
     case setIcon
     case setImage
+    case setVideo
     case call
     case mute
     case markdown
@@ -38,6 +39,8 @@ enum NotificationContentProcessorItem {
             return IconProcessor()
         case .setImage:
             return ImageProcessor()
+        case .setVideo:
+            return VideoProcessor()
         case .call:
             return CallProcessor()
         case .mute:

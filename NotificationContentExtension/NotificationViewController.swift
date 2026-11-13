@@ -6,6 +6,7 @@
 //  Copyright © 2018 Fin. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 import UserNotifications
 import UserNotificationsUI
@@ -27,6 +28,21 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         return view
     }()
 
+    /// Video playback (`video` parameter)
+    var player: AVPlayer?
+    var playerLayer: AVPlayerLayer?
+    var playerEndObserver: NSObjectProtocol?
+    /// Attachment URL we hold security-scoped access to
+    var securityScopedVideoURL: URL?
+
+    deinit {
+        player?.pause()
+        if let playerEndObserver {
+            NotificationCenter.default.removeObserver(playerEndObserver)
+        }
+        securityScopedVideoURL?.stopAccessingSecurityScopedResource()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.noticeLabel)
@@ -36,17 +52,19 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.preferredContentSize = CGSize(width: 0, height: 1)
+        self.preferredContentSize = self.playerLayer == nil ? CGSize(width: 0, height: 1) : self.imageView.frame.size
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.preferredContentSize = CGSize(width: 0, height: 1)
+        self.preferredContentSize = self.playerLayer == nil ? CGSize(width: 0, height: 1) : self.imageView.frame.size
     }
 
     func didReceive(_ notification: UNNotification) {
-        ///  处理图片显示
-        self.ImageHandler(notification)
+        ///  处理图片显示 (a video, if present, takes the place of the image)
+        if !self.videoHandler(notification) {
+            self.ImageHandler(notification)
+        }
 
         guard notification.request.content.userInfo["autocopy"] as? String == "1"
             || notification.request.content.userInfo["automaticallycopy"] as? String == "1"
@@ -142,5 +160,107 @@ extension NotificationViewController {
                 self.imageView.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
             }
         }
+    }
+}
+
+// MARK: - Video
+
+extension NotificationViewController {
+    /// The system draws a play/pause button over the video.
+    @objc var mediaPlayPauseButtonType: UNNotificationContentExtensionMediaPlayPauseButtonType {
+        player == nil ? .none : .overlay
+    }
+
+    @objc var mediaPlayPauseButtonFrame: CGRect {
+        imageView.frame
+    }
+
+    @objc var mediaPlayPauseButtonTintColor: UIColor {
+        .white
+    }
+
+    @objc func mediaPlay() {
+        player?.play()
+    }
+
+    @objc func mediaPause() {
+        player?.pause()
+    }
+
+    /// Plays the `video` parameter. Uses the attachment the service extension
+    /// downloaded when there is one, otherwise streams the URL.
+    /// - Returns: false when the notification has no video.
+    func videoHandler(_ notification: UNNotification) -> Bool {
+        let content = notification.request.content
+        guard let urlString = content.userInfo["video"] as? String,
+              let remoteURL = URL(string: urlString.trimmingCharacters(in: .whitespacesAndNewlines)),
+              let scheme = remoteURL.scheme?.lowercased(),
+              scheme == "https" || scheme == "http"
+        else {
+            return false
+        }
+
+        var videoURL = remoteURL
+        if let attachment = content.attachments.first(where: { $0.identifier == "video" }),
+           attachment.url.startAccessingSecurityScopedResource()
+        {
+            securityScopedVideoURL = attachment.url
+            videoURL = attachment.url
+        }
+
+        let asset = AVURLAsset(url: videoURL)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVPlayer(playerItem: item)
+        player.actionAtItemEnd = .none
+        self.player = player
+
+        let layer = AVPlayerLayer(player: player)
+        layer.videoGravity = .resizeAspect
+        layer.backgroundColor = UIColor.black.cgColor
+        imageView.image = nil
+        imageView.backgroundColor = .black
+        imageView.layer.addSublayer(layer)
+        playerLayer = layer
+
+        // Loop
+        playerEndObserver = NotificationCenter.default.addObserver(
+            forName: .AVPlayerItemDidPlayToEndTime,
+            object: item,
+            queue: .main
+        ) { [weak player] _ in
+            player?.seek(to: .zero)
+            player?.play()
+        }
+
+        // Start with a 16:9 box, then resize to the real aspect ratio.
+        layoutVideo(aspectRatio: 16.0 / 9.0)
+        Task {
+            var aspectRatio: CGFloat = 16.0 / 9.0
+            if let track = try? await asset.loadTracks(withMediaType: .video).first,
+               let loaded = try? await track.load(.naturalSize, .preferredTransform)
+            {
+                let size = loaded.0.applying(loaded.1)
+                if abs(size.width) > 0, abs(size.height) > 0 {
+                    aspectRatio = abs(size.width) / abs(size.height)
+                }
+            }
+            await MainActor.run {
+                self.layoutVideo(aspectRatio: aspectRatio)
+                // The user expanded the notification on purpose: start playing.
+                self.player?.play()
+                self.extensionContext?.mediaPlayingStarted()
+            }
+        }
+        return true
+    }
+
+    func layoutVideo(aspectRatio: CGFloat) {
+        let width = view.bounds.size.width
+        // Keep tall (portrait) videos from taking the whole screen.
+        let height = min(width / aspectRatio, width * 1.25)
+        let frame = CGRect(x: 0, y: 0, width: width, height: height)
+        imageView.frame = frame
+        playerLayer?.frame = imageView.bounds
+        preferredContentSize = frame.size
     }
 }

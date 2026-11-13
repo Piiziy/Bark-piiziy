@@ -225,6 +225,7 @@
 		06E944782C0701F300AC86AB /* IconProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E944772C0701F300AC86AB /* IconProcessor.swift */; };
 		06E9447A2C0704E500AC86AB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E944792C0704E500AC86AB /* ImageDownloader.swift */; };
 		06E9447C2C07052F00AC86AB /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E9447B2C07052F00AC86AB /* ImageProcessor.swift */; };
+		06A1B2C3D4E5F60718293A4C /* VideoProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1B2C3D4E5F60718293A4B /* VideoProcessor.swift */; };
 		06EE1FD326843E9300586708 /* BarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE1FD226843E9300586708 /* BarkTests.swift */; };
 		06EEF333291CCFF400CA228A /* CryptoSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EEF332291CCFF400CA228A /* CryptoSettingController.swift */; };
 		06EEF335291CD00000CA228A /* CryptoSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EEF334291CD00000CA228A /* CryptoSettingViewModel.swift */; };
@@ -542,6 +543,7 @@
 		06E944772C0701F300AC86AB /* IconProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProcessor.swift; sourceTree = "<group>"; };
 		06E944792C0704E500AC86AB /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		06E9447B2C07052F00AC86AB /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		06A1B2C3D4E5F60718293A4B /* VideoProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProcessor.swift; sourceTree = "<group>"; };
 		06EE1FD026843E9300586708 /* BarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EE1FD226843E9300586708 /* BarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkTests.swift; sourceTree = "<group>"; };
 		06EE1FD426843E9300586708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -984,6 +986,7 @@
 				06E944722C06FF9200AC86AB /* ArchiveProcessor.swift */,
 				06E944772C0701F300AC86AB /* IconProcessor.swift */,
 				06E9447B2C07052F00AC86AB /* ImageProcessor.swift */,
+				06A1B2C3D4E5F60718293A4B /* VideoProcessor.swift */,
 				06D69E402C11983E00161A35 /* CallProcessor.swift */,
 				06D7A1B02EB0C0DE00A1B2C3 /* SoundUrlProcessor.swift */,
 				06E944792C0704E500AC86AB /* ImageDownloader.swift */,
@@ -1969,6 +1972,7 @@
 				06D7A1B12EB0C0DE00A1B2C3 /* SoundUrlProcessor.swift in Sources */,
 				06B11591247BC132006D91FB /* Message.swift in Sources */,
 				06E9447C2C07052F00AC86AB /* ImageProcessor.swift in Sources */,
+				06A1B2C3D4E5F60718293A4C /* VideoProcessor.swift in Sources */,
 				06E9446A2C06E4A200AC86AB /* CiphertextProcessor.swift in Sources */,
 				06E944712C06FF4C00AC86AB /* AutoCopyProcessor.swift in Sources */,
 				0687F2A92CCB791A00B2A52F /* UIFont+Extension.swift in Sources */,
