@@ -1,3 +1,5 @@
+> **HomePush fork** — 자체 서버 + 자체 앱으로 운영하는 Bark 포크입니다. 설정/배포 방법은 [SELFHOST.ko.md](SELFHOST.ko.md)를 보세요. (서버 코드는 `server/`)
+
 English | **[中文](README.zh.md)** | **[日本語](README.ja.md)**
 ## Bark
 Bark is a push notification tool app. It's free, simple, and secure, leveraging APNs without draining device battery.<br/>
