@@ -22,6 +22,10 @@ class Message: Object {
     @Persisted var bodyType: String?
     @Persisted var url: String?
     @Persisted(indexed: true) var image: String?
+    /// Notification icon (explicit `icon` or the server's per-group default)
+    @Persisted var icon: String?
+    /// Video URL sent with the `video` parameter
+    @Persisted var video: String?
     @Persisted(indexed: true) var group: String?
     @Persisted(indexed: true) var createDate: Date?
     @Persisted(indexed: true) var expireDate: Date?
@@ -51,6 +55,8 @@ class Message: Object {
         self.bodyType = json["bodyType"].string
         self.url = json["url"].string
         self.image = json["image"].string
+        self.icon = json["icon"].string
+        self.video = json["video"].string
         self.group = json["group"].string
         self.createDate = Date(timeIntervalSince1970: TimeInterval(createDate))
         if let expireDate = json["expireDate"].int64 {
@@ -83,6 +89,12 @@ class Message: Object {
         }
         if let group = dict["group"] as? String {
             self.group = group
+        }
+        if let icon = dict["icon"] as? String {
+            self.icon = icon
+        }
+        if let video = dict["video"] as? String {
+            self.video = video
         }
         if let createDateInterval = dict["createDate"] as? TimeInterval {
             self.createDate = Date(timeIntervalSince1970: createDateInterval)

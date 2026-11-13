@@ -26,6 +26,8 @@ class ArchiveProcessor: NotificationContentProcessor {
             let url = userInfo["url"] as? String
             let group = userInfo["group"] as? String
             let image = userInfo["image"] as? String
+            let icon = userInfo["icon"] as? String
+            let video = userInfo["video"] as? String
             let id = userInfo["id"] as? String
             let markdown = userInfo["markdown"] as? String
 
@@ -70,6 +72,12 @@ class ArchiveProcessor: NotificationContentProcessor {
             }
             if let group = group {
                 messageDict["group"] = group
+            }
+            if let icon, !icon.isEmpty {
+                messageDict["icon"] = icon
+            }
+            if let video, !video.isEmpty {
+                messageDict["video"] = video
             }
             messageDict["createDate"] = createDate.timeIntervalSince1970
             if let expireDate {

@@ -25,6 +25,7 @@ class HomeViewController: BaseViewController<HomeViewModel> {
     private let contentView = UIView()
 
     private let permissionCard = HomePermissionCard()
+    private let groupsCard = HomeGroupsCard()
     private let exampleCard = HomeExampleCard()
     private let settingsCard = HomeSettingsCard()
     private let documentsCard = HomeDocumentsCard()
@@ -77,7 +78,7 @@ class HomeViewController: BaseViewController<HomeViewModel> {
             make.centerX.equalToSuperview()
         }
 
-        [permissionCard, exampleCard, settingsCard, documentsCard].forEach(contentStack.addArrangedSubview)
+        [permissionCard, groupsCard, exampleCard, settingsCard, documentsCard].forEach(contentStack.addArrangedSubview)
         // 等异步取到权限状态、configure 后再显示，避免闪出一张空卡片
         permissionCard.isHidden = true
     }
@@ -93,6 +94,10 @@ class HomeViewController: BaseViewController<HomeViewModel> {
         settingsCard.soundsRow.addTarget(self, action: #selector(openSounds), for: .touchUpInside)
         documentsCard.parameterButton.addTarget(self, action: #selector(openDocumentation), for: .touchUpInside)
         documentsCard.faqButton.addTarget(self, action: #selector(openFAQ), for: .touchUpInside)
+        groupsCard.onSelectGroup = { [weak self] group in
+            let controller = MessageListViewController(viewModel: MessageListViewModel(sourceType: .group(group)))
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 
     private func bindTabSelection() {

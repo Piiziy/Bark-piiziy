@@ -24,6 +24,10 @@ class MessageItemModel {
     var dateText: String?
     
     var image: String?
+    /// Group / sender icon shown as the card's avatar
+    var icon: String?
+    /// Video URL; the card shows a Liquid Glass play button
+    var video: String?
     
     var createDate: Date?
     var expireDate: Date?
@@ -48,6 +52,8 @@ class MessageItemModel {
     init(message: Message) {
         self.id = message.id
         self.group = message.group
+        self.icon = message.icon
+        self.video = message.video
         
         let title = message.title ?? ""
         let subtitle = message.subtitle ?? ""

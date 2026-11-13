@@ -7,6 +7,7 @@
 //
 
 import Material
+import RxCocoa
 import UIKit
 
 class BarkTabBarController: StateRestoringTabBarContr {
@@ -25,6 +26,31 @@ class BarkTabBarController: StateRestoringTabBarContr {
                            UITabBarItem(title: "settings".localized, image: UIImage(named: "baseline_manage_accounts_black_24pt"), tag: 2)]
         for (index, viewController) in self.viewControllers!.enumerated() {
             viewController.tabBarItem = tabBarItems[index]
+        }
+
+        if #available(iOS 26.0, *) {
+            setupLiquidGlassTabBar()
+        }
+    }
+
+    /// Liquid Glass tab bar: it shrinks while the content scrolls down, and a
+    /// glass accessory above it shows the latest push (with its group icon).
+    /// When the bar is minimized the accessory moves inline next to it.
+    @available(iOS 26.0, *)
+    private func setupLiquidGlassTabBar() {
+        tabBarMinimizeBehavior = .onScrollDown
+
+        let latestMessageView = LatestMessageAccessoryView()
+        latestMessageView.addTarget(self, action: #selector(openMessageHistory), for: .touchUpInside)
+        bottomAccessory = UITabAccessory(contentView: latestMessageView)
+    }
+
+    @objc private func openMessageHistory() {
+        if currentSelectedIndex == TabPage.messageHistory.rawValue {
+            // Already there: scroll to the newest message
+            tabBarItemDidClick.accept(.messageHistory)
+        } else {
+            currentSelectedIndex = TabPage.messageHistory.rawValue
         }
     }
 }

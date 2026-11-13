@@ -100,6 +100,7 @@
 		0667D192247D162C005DE2ED /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667D191247D162C005DE2ED /* MessageTableViewCell.swift */; };
 		0667D194247D1BA0005DE2ED /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667D193247D1BA0005DE2ED /* Date+Extension.swift */; };
 		066890082D1946D500E106F2 /* MessageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066890072D1946D500E106F2 /* MessageItemView.swift */; };
+		06B1C2D3E4F5061728394A5C /* MessageMediaViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1C2D3E4F5061728394A5B /* MessageMediaViews.swift */; };
 		0668900B2D19525400E106F2 /* ShowLessAndClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0668900A2D19525400E106F2 /* ShowLessAndClearView.swift */; };
 		0668900D2D19582400E106F2 /* MessageGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0668900C2D19582400E106F2 /* MessageGroupHeaderView.swift */; };
 		0668900F2F751A1000E106F2 /* MessageListSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0668900E2F751A1000E106F2 /* MessageListSkeletonView.swift */; };
@@ -139,12 +140,14 @@
 		069C6CA72ED03E27007244BB /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 069C6CA62ED03E27007244BB /* Markdown */; };
 		069C6CA92ED03F07007244BB /* BKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06840DBA272298FB001B3193 /* BKColor.swift */; };
 		06A100022FEE0001000000A1 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100012FEE0001000000A1 /* GlassView.swift */; };
+		06B1C2D3E4F5061728394A5E /* LatestMessageAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1C2D3E4F5061728394A5D /* LatestMessageAccessoryView.swift */; };
 		06A100042FEE0001000000A1 /* HomeGlassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100032FEE0001000000A1 /* HomeGlassButton.swift */; };
 		06A100062FEE0001000000A1 /* HomeExampleSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100052FEE0001000000A1 /* HomeExampleSegmentedControl.swift */; };
 		06A100082FEE0001000000A1 /* HomeSettingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100072FEE0001000000A1 /* HomeSettingRow.swift */; };
 		06A100112FEE0001000000A1 /* HomePermissionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100102FEE0001000000A1 /* HomePermissionCard.swift */; };
 		06A100132FEE0001000000A1 /* HomeExampleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100122FEE0001000000A1 /* HomeExampleCard.swift */; };
 		06A100152FEE0001000000A1 /* HomeSettingsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100142FEE0001000000A1 /* HomeSettingsCard.swift */; };
+		06B1C2D3E4F5061728394A60 /* HomeGroupsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B1C2D3E4F5061728394A5F /* HomeGroupsCard.swift */; };
 		06A100172FEE0001000000A1 /* HomeDocumentsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100162FEE0001000000A1 /* HomeDocumentsCard.swift */; };
 		06A100192FEE0001000000A1 /* CodeHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A100182FEE0001000000A1 /* CodeHighlighter.swift */; };
 		06A1001B2FEE0001000000A1 /* HomeFlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A1001A2FEE0001000000A1 /* HomeFlatButton.swift */; };
@@ -463,6 +466,7 @@
 		0667D191247D162C005DE2ED /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		0667D193247D1BA0005DE2ED /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		066890072D1946D500E106F2 /* MessageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItemView.swift; sourceTree = "<group>"; };
+		06B1C2D3E4F5061728394A5B /* MessageMediaViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageMediaViews.swift; sourceTree = "<group>"; };
 		0668900A2D19525400E106F2 /* ShowLessAndClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLessAndClearView.swift; sourceTree = "<group>"; };
 		0668900C2D19582400E106F2 /* MessageGroupHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageGroupHeaderView.swift; sourceTree = "<group>"; };
 		0668900E2F751A1000E106F2 /* MessageListSkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListSkeletonView.swift; sourceTree = "<group>"; };
@@ -492,12 +496,14 @@
 		0699473C2D223094008D5E40 /* CustomTapTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapTextView.swift; sourceTree = "<group>"; };
 		069C6CA32ED03C72007244BB /* MarkdownProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownProcessor.swift; sourceTree = "<group>"; };
 		06A100012FEE0001000000A1 /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
+		06B1C2D3E4F5061728394A5D /* LatestMessageAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestMessageAccessoryView.swift; sourceTree = "<group>"; };
 		06A100032FEE0001000000A1 /* HomeGlassButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGlassButton.swift; sourceTree = "<group>"; };
 		06A100052FEE0001000000A1 /* HomeExampleSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExampleSegmentedControl.swift; sourceTree = "<group>"; };
 		06A100072FEE0001000000A1 /* HomeSettingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingRow.swift; sourceTree = "<group>"; };
 		06A100102FEE0001000000A1 /* HomePermissionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePermissionCard.swift; sourceTree = "<group>"; };
 		06A100122FEE0001000000A1 /* HomeExampleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExampleCard.swift; sourceTree = "<group>"; };
 		06A100142FEE0001000000A1 /* HomeSettingsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSettingsCard.swift; sourceTree = "<group>"; };
+		06B1C2D3E4F5061728394A5F /* HomeGroupsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroupsCard.swift; sourceTree = "<group>"; };
 		06A100162FEE0001000000A1 /* HomeDocumentsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDocumentsCard.swift; sourceTree = "<group>"; };
 		06A100182FEE0001000000A1 /* CodeHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeHighlighter.swift; sourceTree = "<group>"; };
 		06A1001A2FEE0001000000A1 /* HomeFlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlatButton.swift; sourceTree = "<group>"; };
@@ -738,6 +744,7 @@
 				06A100092FEE0001000000A1 /* Home */,
 				066890092D19495400E106F2 /* MessageList */,
 				06A100012FEE0001000000A1 /* GlassView.swift */,
+				06B1C2D3E4F5061728394A5D /* LatestMessageAccessoryView.swift */,
 				06BBB8C02567B3EF0076F63E /* BaseTableViewCell.swift */,
 				06C5952C2480E3F8006B98F3 /* LabelCell.swift */,
 				06C5953024811392006B98F3 /* ArchiveSettingCell.swift */,
@@ -939,6 +946,7 @@
 			children = (
 				0699473C2D223094008D5E40 /* CustomTapTextView.swift */,
 				066890072D1946D500E106F2 /* MessageItemView.swift */,
+				06B1C2D3E4F5061728394A5B /* MessageMediaViews.swift */,
 				0667D191247D162C005DE2ED /* MessageTableViewCell.swift */,
 				0668900A2D19525400E106F2 /* ShowLessAndClearView.swift */,
 				0668900C2D19582400E106F2 /* MessageGroupHeaderView.swift */,
@@ -959,6 +967,7 @@
 				06A100102FEE0001000000A1 /* HomePermissionCard.swift */,
 				06A100122FEE0001000000A1 /* HomeExampleCard.swift */,
 				06A100142FEE0001000000A1 /* HomeSettingsCard.swift */,
+				06B1C2D3E4F5061728394A5F /* HomeGroupsCard.swift */,
 				06A100162FEE0001000000A1 /* HomeDocumentsCard.swift */,
 			);
 			path = Home;
@@ -1826,6 +1835,7 @@
 				1EFB545D2C314A6800B8E51B /* BarkSplitViewController.swift in Sources */,
 				06BBB8C92567B6730076F63E /* Operators.swift in Sources */,
 				066890082D1946D500E106F2 /* MessageItemView.swift in Sources */,
+				06B1C2D3E4F5061728394A5C /* MessageMediaViews.swift in Sources */,
 				0627DABB298B6EA2002F3F69 /* DropBoxView.swift in Sources */,
 				0672CB06256903F700570C9D /* MessageListViewModel.swift in Sources */,
 				0627DABD2990D615002F3F69 /* BorderTextField.swift in Sources */,
@@ -1891,6 +1901,7 @@
 				0637FA7C20E0930E00E80174 /* BarkApi.swift in Sources */,
 				06BE84042E6EAE7100E6F856 /* InsetView.swift in Sources */,
 				06A100022FEE0001000000A1 /* GlassView.swift in Sources */,
+				06B1C2D3E4F5061728394A5E /* LatestMessageAccessoryView.swift in Sources */,
 				06A100042FEE0001000000A1 /* HomeGlassButton.swift in Sources */,
 				06A1001B2FEE0001000000A1 /* HomeFlatButton.swift in Sources */,
 				06A100212FEE0001000000A1 /* HomeSplitButton.swift in Sources */,
@@ -1901,6 +1912,7 @@
 				06A100192FEE0001000000A1 /* CodeHighlighter.swift in Sources */,
 				06C10A022FB20001000000D1 /* QRCodeGenerator.swift in Sources */,
 				06A100152FEE0001000000A1 /* HomeSettingsCard.swift in Sources */,
+				06B1C2D3E4F5061728394A60 /* HomeGroupsCard.swift in Sources */,
 				06A100172FEE0001000000A1 /* HomeDocumentsCard.swift in Sources */,
 				061E35862D1E5028009A2D6F /* MessageItemModel.swift in Sources */,
 				06C2CF252685BDB80034B127 /* SpacerCell.swift in Sources */,

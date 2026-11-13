@@ -46,6 +46,28 @@ class MessageItemView: UIView {
         return imageView
     }()
     
+    /// Group / sender icon (`icon` parameter or the server's per-group default)
+    let avatarView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 9
+        imageView.layer.cornerCurve = .continuous
+        imageView.clipsToBounds = true
+        imageView.backgroundColor = BKColor.grey.lighten4
+        imageView.isHidden = true
+        return imageView
+    }()
+    static let avatarSize: CGFloat = 34
+
+    /// Liquid Glass play button shown over video thumbnails
+    let playButton: GlassPlayButton = {
+        let button = GlassPlayButton()
+        button.isHidden = true
+        return button
+    }()
+    private let videoTapRecognizer = UITapGestureRecognizer()
+    private var hasAvatar = false
+
     let contentStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -82,7 +104,7 @@ class MessageItemView: UIView {
     
     var isShowSubviews: Bool = true {
         didSet {
-            for view in [bodyLabel, dateLabel] {
+            for view in [bodyLabel, dateLabel, avatarView, playButton] as [UIView] {
                 view.alpha = isShowSubviews ? 1 : 0
             }
         }
@@ -98,11 +120,19 @@ class MessageItemView: UIView {
         super.init(frame: .zero)
         self.backgroundColor = BKColor.background.primary
         self.addSubview(panel)
+        panel.addSubview(avatarView)
         panel.addSubview(contentStackView)
         panel.addSubview(dateLabel)
+        panel.addSubview(playButton)
         panel.addSubview(blackMaskView)
         contentStackView.addArrangedSubview(bodyLabel)
         contentStackView.addArrangedSubview(imageView)
+
+        videoTapRecognizer.addTarget(self, action: #selector(playVideo))
+        videoTapRecognizer.isEnabled = false
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(videoTapRecognizer)
+        playButton.addTarget(self, action: #selector(playVideo), for: .touchUpInside)
         
         self.isAccessibilityElement = true
         self.subviews.forEach { $0.isAccessibilityElement = false }
@@ -125,7 +155,9 @@ class MessageItemView: UIView {
             self.tapAction?(message, self)
         }
         
-        panel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
+        let panelTap = UITapGestureRecognizer(target: self, action: #selector(tap))
+        panelTap.delegate = self
+        panel.addGestureRecognizer(panelTap)
     }
 
     @available(*, unavailable)
@@ -134,10 +166,15 @@ class MessageItemView: UIView {
     }
     
     func layoutView() {
-        contentStackView.snp.makeConstraints { make in
-            make.top.equalTo(16)
+        avatarView.snp.makeConstraints { make in
+            make.top.equalTo(14)
             make.left.equalTo(12)
-            make.right.equalTo(-12)
+            make.width.height.equalTo(MessageItemView.avatarSize)
+            make.bottom.lessThanOrEqualTo(panel).offset(-12)
+        }
+        remakeContentConstraints()
+        playButton.snp.makeConstraints { make in
+            make.center.equalTo(imageView)
         }
         dateLabel.snp.makeConstraints { make in
             make.left.equalTo(contentStackView)
@@ -158,6 +195,23 @@ class MessageItemView: UIView {
     @objc func tap() {
         guard let message else { return }
         self.tapAction?(message, self)
+    }
+
+    @objc func playVideo() {
+        guard let video = message?.video, let url = URL(string: video) else { return }
+        MessageVideoPlayer.play(url, from: self)
+    }
+
+    func remakeContentConstraints() {
+        contentStackView.snp.remakeConstraints { make in
+            make.top.equalTo(16)
+            make.right.equalTo(-12)
+            if hasAvatar {
+                make.left.equalTo(avatarView.snp.right).offset(10)
+            } else {
+                make.left.equalTo(12)
+            }
+        }
     }
 }
 
@@ -182,6 +236,19 @@ extension MessageItemView {
         self.bodyLabel.attributedText = message.attributedText
         self.accessibilityLabel = message.attributedText?.string
         self.dateLabel.text = message.dateText
+        setAvatar(message: message)
+
+        let videoURL = message.video.flatMap { URL(string: $0) }
+        playButton.isHidden = videoURL == nil
+        videoTapRecognizer.isEnabled = videoURL != nil
+        imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = nil
+        if videoURL != nil {
+            self.accessibilityLabel = [message.attributedText?.string, "video".localized]
+                .compactMap { $0 }
+                .joined(separator: ", ")
+        }
+
         if let image = message.image {
             imageView.isHidden = false
             // 图片未缓存时，使用的默认尺寸
@@ -194,6 +261,12 @@ extension MessageItemView {
                 guard let self else { return }
                 guard let image = try? result.get().image else {
                     self.imageView.image = nil
+                    return
+                }
+                // With a video, the image is its poster: tapping plays the video
+                // instead of opening the image viewer.
+                if videoURL != nil {
+                    layoutImageView(image: image)
                     return
                 }
                 
@@ -214,16 +287,69 @@ extension MessageItemView {
                 
                 layoutImageView(image: image)
             }
+        } else if let videoURL {
+            setVideoThumbnail(url: videoURL, messageId: message.id)
         } else {
             imageView.isHidden = true
             remakeImageViewConstraints(width: 0, height: 0)
         }
     }
+
+    func setAvatar(message: MessageItemModel) {
+        let iconURL = message.icon.flatMap { URL(string: $0) }
+        let hasAvatar = iconURL != nil
+        avatarView.isHidden = !hasAvatar
+        if hasAvatar != self.hasAvatar {
+            self.hasAvatar = hasAvatar
+            remakeContentConstraints()
+        }
+        guard let iconURL else {
+            avatarView.kf.cancelDownloadTask()
+            avatarView.image = nil
+            return
+        }
+        // The notification service extension already cached the icon in the shared cache
+        avatarView.kf.setImage(
+            with: iconURL,
+            options: [.targetCache(getImageCache(date: message.createDate ?? Date())), .loadDiskFileSynchronously, .transition(.fade(0.15))]
+        )
+    }
+
+    /// Video without a poster image: a fixed 16:9 frame filled with the first frame.
+    func setVideoThumbnail(url: URL, messageId: String) {
+        imageView.isHidden = false
+        imageView.removeImageViewer()
+        imageView.kf.cancelDownloadTask()
+        imageView.contentMode = .scaleAspectFill
+        imageView.backgroundColor = .black
+        let width = min(320, availableMediaWidth())
+        remakeImageViewConstraints(width: width, height: (width * 9 / 16).rounded())
+
+        if let cached = VideoThumbnailProvider.cached(url) {
+            imageView.image = cached
+            return
+        }
+        imageView.image = nil
+        // UIView is main-actor isolated, so this Task resumes on the main thread.
+        Task { [weak self] in
+            let thumbnail = await VideoThumbnailProvider.thumbnail(for: url)
+            guard let self, self.message?.id == messageId, let thumbnail else { return }
+            UIView.transition(with: self.imageView, duration: 0.2, options: .transitionCrossDissolve) {
+                self.imageView.image = thumbnail
+            }
+        }
+    }
+
+    /// Width available for images inside the card.
+    func availableMediaWidth() -> CGFloat {
+        let avatarWidth = hasAvatar ? MessageItemView.avatarSize + 10 : 0
+        return UIScreen.main.bounds.width - 32 - 24 - avatarWidth
+    }
     
     func layoutImageView(image: UIImage) {
         let scale = image.size.height / image.size.width
         // iPad 下，图片宽度不超过 500。如果图片尺寸小于控件宽度，则以实际图片尺寸作为宽度
-        var width = min(min(500, UIScreen.main.bounds.width - 32 - 24), image.width)
+        var width = min(min(500, availableMediaWidth()), image.width)
         var height = width * scale
         
         if height > 400 {
@@ -264,6 +390,17 @@ extension MessageItemView {
                 }
             }
         }
+    }
+}
+
+extension MessageItemView: UIGestureRecognizerDelegate {
+    /// Taps on a video (thumbnail or play button) play it instead of
+    /// triggering the card's own tap action.
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        guard videoTapRecognizer.isEnabled, let view = touch.view else {
+            return true
+        }
+        return !(view.isDescendant(of: imageView) || view.isDescendant(of: playButton))
     }
 }
 

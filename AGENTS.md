@@ -38,7 +38,7 @@ bundle exec fastlane beta
 **Main App Target (Bark/)**
 - Entry point: `AppDelegate.swift` - handles app lifecycle, APNs registration, Realm setup
 - `AppDelegate+Realm.swift` - Realm database initialization and migration logic
-- Realm schema version: 17 (see `RealmConfiguration.swift`)
+- Realm schema version: 20 (see `RealmConfiguration.swift`)
 
 **Notification Extensions**
 1. `NotificationServiceExtension/` - UNNotificationServiceExtension that processes incoming notifications
