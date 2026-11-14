@@ -21,6 +21,8 @@ platform :ios do
   desc "Env: ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY (.p8 contents), MATCH_PASSWORD,"
   desc "     MATCH_READONLY (false only to create certificates), HOMEPUSH_PUSH_URL (optional)"
   lane :beta do |options|
+    # setup_ci forces ENV["MATCH_READONLY"]=true, so read it first.
+    match_readonly = ENV["MATCH_READONLY"] != "false"
     setup_ci
 
     api_key = app_store_connect_api_key(
@@ -31,7 +33,7 @@ platform :ios do
       in_house: false
     )
 
-    match(type: "appstore", api_key: api_key, readonly: ENV["MATCH_READONLY"] != "false")
+    match(type: "appstore", api_key: api_key, readonly: match_readonly)
 
     # The project uses automatic signing for local development; switch the
     # Release configuration to the match profiles for this CI build only.
