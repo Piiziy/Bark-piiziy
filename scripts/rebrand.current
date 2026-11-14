@@ -1,6 +1,6 @@
 # Written by scripts/rebrand.sh - the identifiers the project currently uses.
 BUNDLE_ID="com.piiziy.homepush"
 APP_GROUP="group.com.piiziy.homepush"
-TEAM_ID=""
+TEAM_ID="2M7Z8SF8B4"
 SERVER="https://push.example.com"
 DISPLAY_NAME="HomePush"
