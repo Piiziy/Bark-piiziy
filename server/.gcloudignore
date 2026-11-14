@@ -1,0 +1,13 @@
+# Files never uploaded to Cloud Build. Keep secrets out of the build context.
+.gcloudignore
+.git
+*.p8
+.env
+selfhost/secrets/
+selfhost/data/
+selfhost/media/
+selfhost/.env
+cloudrun/.env
+data/
+bark-server
+dist
