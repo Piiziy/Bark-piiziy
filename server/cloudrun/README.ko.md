@@ -11,6 +11,21 @@
 | 첫 요청 | 잠들어 있으면 1~2초 늦을 수 있습니다 |
 | 그룹 아이콘 | `cloudrun/group-icons.json`을 이미지에 포함합니다. 수정 후 재배포하세요(`PUT /group-icons`로 바꾼 값은 재시작 시 사라집니다) |
 
+## GitHub Actions로 배포 (현재 사용 중)
+`server/` 아래를 바꿔 push하면 [.github/workflows/deploy-server.yaml](../../.github/workflows/deploy-server.yaml)이 자동으로 배포합니다. Actions 탭에서 **Run workflow**로 수동 실행도 됩니다.
+
+| 종류 | 이름 | 값 |
+| --- | --- | --- |
+| Secret | `APNS_KEY` | `.p8` 파일 전체 내용 |
+| Secret | `APNS_KEY_ID` | APNs Key ID (10자리) |
+| Secret | `DEVICE_TOKEN` | 앱 → 설정 → Device Token (앱 설치 후 추가) |
+| Variable (선택) | `APNS_SANDBOX` | 기본 `true`(Xcode 설치). TestFlight로 바꾸면 `false` |
+
+GCP 쪽은 Workload Identity(키 파일 없음)로 연결되어 있고, 이 저장소의 Actions만 `github-deploy` 서비스 계정을 쓸 수 있습니다.
+시크릿을 바꾼 뒤에는 Actions에서 **Run workflow**를 눌러 다시 배포하세요.
+
+아래 1~3은 이 Mac에서 직접 배포할 때의 절차입니다.
+
 ## 1. 처음 한 번 (직접 하셔야 하는 것)
 1. https://console.cloud.google.com 에서 **프로젝트 생성**, **결제 계정 연결**(카드 등록, 무료 한도 안에서는 청구되지 않음)
 2. 터미널에서 로그인
