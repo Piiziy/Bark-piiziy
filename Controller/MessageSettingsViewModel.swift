@@ -107,7 +107,7 @@ class MessageSettingsViewModel: ViewModel, ViewModelType {
                     title: "Github Run Id",
                     text: "\(runId)",
                     textColor: BKColor.grey.darken2,
-                    url: URL(string: "https://github.com/Finb/Bark/actions/runs/\(runId)")
+                    url: URL(string: "https://github.com/Piiziy/Bark-piiziy/actions/runs/\(runId)")
                 ))
             }
             settings.append(

@@ -1,8 +1,10 @@
-git_url("https://github.com/Finb/match.git")
-
+# Encrypted App Store certificate + profiles, stored in a private repo.
+# CI reaches it with a deploy key (secret MATCH_GIT_PRIVATE_KEY) and decrypts
+# with MATCH_PASSWORD.
+git_url("git@github.com:Piiziy/homepush-certificates.git")
 storage_mode("git")
-
-type("appstore") # The default type, can be: appstore, adhoc, enterprise or development
+type("appstore")
+team_id("2M7Z8SF8B4")
 
 app_identifier([
   "com.piiziy.homepush",
@@ -12,9 +14,3 @@ app_identifier([
   "com.piiziy.homepush.watch",
   "com.piiziy.homepush.watch.NotificationService"
 ])
-# username("user@fastlane.tools") # Your Apple Developer Portal username
-
-# For all available options run `fastlane match --help`
-# Remove the # in the beginning of the line to enable the other options
-
-# The docs are available on https://docs.fastlane.tools/actions/match

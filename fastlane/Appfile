@@ -1,6 +1,6 @@
 app_identifier("com.piiziy.homepush") # The bundle identifier of your app
-apple_id("finuuid@gmail.com") # Your Apple email address
 
+# CI signs in with an App Store Connect API key (no Apple ID / password).
 itc_team_id("2M7Z8SF8B4") # App Store Connect Team ID
 team_id("2M7Z8SF8B4") # Developer Portal Team ID
 
