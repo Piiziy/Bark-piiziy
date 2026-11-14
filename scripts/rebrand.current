@@ -2,5 +2,5 @@
 BUNDLE_ID="com.piiziy.homepush"
 APP_GROUP="group.com.piiziy.homepush"
 TEAM_ID="2M7Z8SF8B4"
-SERVER="https://push.example.com"
+SERVER="https://homepush-oso7gfd3mq-du.a.run.app"
 DISPLAY_NAME="HomePush"

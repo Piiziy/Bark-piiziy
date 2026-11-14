@@ -88,7 +88,8 @@ echo
 echo "Server URL: $URL"
 echo "Health:     $(curl -fsS "$URL/ping" || echo 'ping failed')"
 if [ "${DEVICE_TOKEN:-}" = "" ]; then
-  echo "Next: copy the device token from the app into DEVICE_TOKEN in .env, then run this script again."
+  echo "Next: copy the device token from the app (Settings > Device Token) into DEVICE_TOKEN"
+  echo "      (.env locally, or the DEVICE_TOKEN repository secret for GitHub Actions) and deploy again."
 fi
 echo "Show your push key (do not share it):"
 echo "  gcloud secrets versions access latest --secret bark-key --project $GCP_PROJECT"

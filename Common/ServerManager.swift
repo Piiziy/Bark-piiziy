@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 
-let defaultServer = "https://push.example.com"
+let defaultServer = "https://homepush-oso7gfd3mq-du.a.run.app"
 
 class Server: Codable {
     let id: String
