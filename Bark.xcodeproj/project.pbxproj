@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9F0C097DDFCDA11B53136ED /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = C9F0C097DDFCDA11B53136EB /* AppIcon.icon */; };
+		C9F0C097DDFCDA11B53136EC /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = C9F0C097DDFCDA11B53136EB /* AppIcon.icon */; };
 		0603706720E1E31600F4CA05 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603706620E1E31600F4CA05 /* Defines.swift */; };
 		0603706B20E20A7C00F4CA05 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603706A20E20A7C00F4CA05 /* String+Extension.swift */; };
 		0603706D20E23EC000F4CA05 /* BarkSFSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603706C20E23EC000F4CA05 /* BarkSFSafariViewController.swift */; };
@@ -374,6 +376,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C9F0C097DDFCDA11B53136EB /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		000000000000000000000006 /* BarkWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = BarkWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000007 /* BarkWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = BarkWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000032 /* BarkWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarkWatch.entitlements; sourceTree = "<group>"; };
@@ -934,6 +937,7 @@
 				06A200012FED000100000001 /* SceneDelegate.swift */,
 				06F808902EF4056C0007352A /* AppDelegate+Realm.swift */,
 				0661A549204FDA4100965E4E /* Assets.xcassets */,
+				C9F0C097DDFCDA11B53136EB /* AppIcon.icon */,
 				0661A54B204FDA4100965E4E /* LaunchScreen.storyboard */,
 				0661A54E204FDA4100965E4E /* Info.plist */,
 				065752C02CB6844A001426D8 /* Localizable.xcstrings */,
@@ -1347,6 +1351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30000000000000000000002 /* Assets.xcassets in Resources */,
+				C9F0C097DDFCDA11B53136ED /* AppIcon.icon in Resources */,
 				F30000000000000000000005 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1403,6 +1408,7 @@
 				0632051F250B6DD4001561EC /* glass.caf in Resources */,
 				06320524250B6DD4001561EC /* minuet.caf in Resources */,
 				0661A54A204FDA4100965E4E /* Assets.xcassets in Resources */,
+				C9F0C097DDFCDA11B53136EC /* AppIcon.icon in Resources */,
 				06320519250B6DD4001561EC /* tiptoes.caf in Resources */,
 				0632052A250B6DD4001561EC /* electronic.caf in Resources */,
 				0632052C250B6DD4001561EC /* horn.caf in Resources */,
