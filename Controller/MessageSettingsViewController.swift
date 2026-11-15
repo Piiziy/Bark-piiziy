@@ -285,7 +285,7 @@ class MessageSettingsViewController: BaseViewController<MessageSettingsViewModel
         switch link {
         case "privacyPolicy":
             self.navigationController?.present(BarkSFSafariViewController(
-                url: URL(string: "https://api.day.app/privacy")!
+                url: URL(string: "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#개인정보")!
             ), animated: true, completion: nil)
         case "userAgreement":
             self.navigationController?.present(BarkSFSafariViewController(

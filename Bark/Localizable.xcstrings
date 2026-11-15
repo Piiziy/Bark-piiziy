@@ -10,28 +10,10 @@
             "value" : "No notifications yet"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nessuna notifica"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "まだ通知はありません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Henüz bildirim yok"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "还没有收到推送"
+            "value" : "아직 알림이 없어요"
           }
         }
       }
@@ -45,28 +27,10 @@
             "value" : "Your latest push will appear here"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Qui comparirà l'ultima notifica"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最新のプッシュがここに表示されます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Son bildiriminiz burada görünecek"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最新的推送会显示在这里"
+            "value" : "최근 받은 알림이 여기에 표시됩니다"
           }
         }
       }
@@ -80,28 +44,10 @@
             "value" : "Server added successfully."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Server aggiunto con successo."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーが正常に追加されました。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu başarıyla eklendi."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加成功！"
+            "value" : "서버를 추가했습니다."
           }
         }
       }
@@ -115,28 +61,10 @@
             "value" : "Add a Server"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aggiungi un server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーを追加"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu Ekleme"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "添加私有服务器"
+            "value" : "서버 추가"
           }
         }
       }
@@ -150,28 +78,10 @@
             "value" : "Algorithm"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Algoritmo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アルゴリズム"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Algoritma"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "算法"
+            "value" : "알고리즘"
           }
         }
       }
@@ -185,28 +95,10 @@
             "value" : "All"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tutti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "すべて"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tümü"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全部"
+            "value" : "전체"
           }
         }
       }
@@ -220,28 +112,10 @@
             "value" : "All time"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Da sempre"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "全期間"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tüm zamanlar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "所有时间"
+            "value" : "전체 기간"
           }
         }
       }
@@ -255,28 +129,10 @@
             "value" : "Archive notifications by default if the 'isArchive' parameter is unset."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archivia le notifiche di default se il parametro 'isArchive' non è impostato."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "'isArchive'パラメータが未設定の場合、デフォルトで通知をアーカイブします。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "'isArchive' parametresi ayarlanmamışsa varsayılan olarak bildirimleri arşivleyin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "当推送请求URL没有指定 isArchive 参数时，将按照此设置来决定是否保存通知消息"
+            "value" : "알림에 'isArchive' 값이 없으면 기본으로 기록에 저장합니다."
           }
         }
       }
@@ -290,28 +146,10 @@
             "value" : "Badge Count"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conteggio badge"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "バッジカウント"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rozet Sayısı"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置角标"
+            "value" : "배지 숫자"
           }
         }
       }
@@ -325,28 +163,10 @@
             "value" : "If you get a 'Decryption Failed' prompt, try adding '-w 0' after the base64 command."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Se ricevi l'errore 'Decrittografia fallita', prova ad aggiungere '-w 0' dopo il comando base64."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "「復号に失敗しました」というプロンプトが表示された場合、base64コマンドの後に「-w 0」を追加してみてください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "şifre çözme başarısız olduysa, base64 komutundan sonra '-i 0' eklemeyi deneyin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "如果提示 Decryption Failed， 尝试在 base64 命令后面 加上 -w 0"
+            "value" : "'복호화 실패'가 나오면 base64 명령 뒤에 '-w 0'을 붙여 보세요."
           }
         }
       }
@@ -360,28 +180,10 @@
             "value" : "Before a month"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oltre un mese fa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1ヶ月前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bir Ay Önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一个月之前"
+            "value" : "한 달 이전"
           }
         }
       }
@@ -395,28 +197,10 @@
             "value" : "Before an hour"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oltre un'ora fa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1時間前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bir Saat Önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一小时之前"
+            "value" : "1시간 이전"
           }
         }
       }
@@ -430,28 +214,10 @@
             "value" : "Before today"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prima di oggi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今日より前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bugünden Önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今天之前"
+            "value" : "오늘 이전"
           }
         }
       }
@@ -465,28 +231,10 @@
             "value" : "Before yesterday"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Prima di ieri"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "昨日より前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dünden Önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "昨天之前"
+            "value" : "어제 이전"
           }
         }
       }
@@ -497,31 +245,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bark uses GitHub Actions to build and publish itself to the App Store. You can verify the ‘run_id’ in the URL to ensure Bark was built from its original open-source codebase."
+            "value" : "HomePush uses GitHub Actions to build and publish itself to the App Store. You can verify the ‘run_id’ in the URL to ensure HomePush was built from its original open-source codebase."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bark usa GitHub Actions per compilarsi e pubblicarsi sull'App Store. Puoi verificare il 'run_id' nell'URL per assicurarti che Bark sia stato compilato dal codice sorgente open-source originale."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "BarkはGitHub Actionsを使用して自身をビルドし、App Storeに公開します。URL内の「run_id」を確認して、Barkがオリジナルのオープンソースコードベースからビルドされたことを確認できます。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bark, kendisini oluşturmak ve App Store'da yayınlamak için GitHub Actions'ı kullanır. Bark'ın orijinal açık kaynak kod tabanından oluşturulduğundan emin olmak için URL'deki 'run_id'yi doğrulayabilirsiniz."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bark 由 GitHub Actions 构建后上传到 App Store，此信息可帮助你确认当前版本是由开源代码所构建，未经任何人(包含作者)修改。"
+            "value" : "HomePush는 GitHub Actions로 빌드해 TestFlight에 배포합니다. 아래 실행 ID로 어떤 소스에서 빌드됐는지 확인할 수 있습니다."
           }
         }
       }
@@ -535,28 +265,10 @@
             "value" : "Cancel"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Annulla"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "キャンセル"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vazgeç"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "取消"
+            "value" : "취소"
           }
         }
       }
@@ -570,28 +282,10 @@
             "value" : "URL encoding the ciphertext, there may be special characters."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Codifica il testo cifrato in URL encoding, potrebbe contenere caratteri speciali."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "暗号文をURLエンコードします。特殊文字が含まれる場合があります。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL şifreli metni kodlarken özel karakterler olabilir."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "密文可能有特殊字符，所以记得 URL 编码一下。"
+            "value" : "암호문은 특수문자가 있을 수 있으니 URL 인코딩하세요."
           }
         }
       }
@@ -605,28 +299,10 @@
             "value" : "Clear"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Svuota"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "クリア"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Temizle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "清除"
+            "value" : "삭제"
           }
         }
       }
@@ -640,28 +316,10 @@
             "value" : "Clear from:"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cancella da:"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "クリア範囲:"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Şuradan Temizle:"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "清除以下时间段的历史消息:"
+            "value" : "삭제 범위:"
           }
         }
       }
@@ -675,28 +333,10 @@
             "value" : "Close"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chiudi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "閉じる"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kapat"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "关闭"
+            "value" : "닫기"
           }
         }
       }
@@ -710,28 +350,10 @@
             "value" : "Confirm"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conferma"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "確認"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Onayla"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "确定"
+            "value" : "확인"
           }
         }
       }
@@ -745,28 +367,10 @@
             "value" : "Are you sure you want to delete this server?"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sei sicuro di voler eliminare questo server?"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このサーバーを削除してもよろしいですか？"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu sunucuyu silmek istediğinizden emin misiniz?"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "确定删除服务器吗？"
+            "value" : "이 서버를 삭제할까요?"
           }
         }
       }
@@ -780,28 +384,10 @@
             "value" : "The console will print"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La console stamperà"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "コンソールに表示されます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konsola şunları yazdırır"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "控制台将打印"
+            "value" : "콘솔 출력 예시"
           }
         }
       }
@@ -815,28 +401,10 @@
             "value" : "Continuous support"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Supporto continuativo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "継続的なサポート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sürekli destek"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "持续支持"
+            "value" : "정기 후원"
           }
         }
       }
@@ -850,28 +418,10 @@
             "value" : "Copied!"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copiato!"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "コピーしました！"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopyalandı!"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制成功"
+            "value" : "복사했습니다"
           }
         }
       }
@@ -885,28 +435,10 @@
             "value" : "Copy"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "コピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopyala"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制"
+            "value" : "복사"
           }
         }
       }
@@ -920,28 +452,10 @@
             "value" : "Copy Address and Key"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia indirizzo e chiave"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アドレスとキーをコピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adres ve Anahtarı Kopyala"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制地址和Key"
+            "value" : "주소와 키 복사"
           }
         }
       }
@@ -955,28 +469,10 @@
             "value" : "Copy the Content"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia il contenuto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "内容をコピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İçeriği Kopyala"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制内容"
+            "value" : "내용 복사"
           }
         }
       }
@@ -990,28 +486,10 @@
             "value" : "Copy Send Script Example"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia lo script di esempio"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "送信スクリプトの例をコピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopya Gönderme Komut Dosyası Örneği"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制发送脚本示例"
+            "value" : "전송 예시 복사"
           }
         }
       }
@@ -1025,28 +503,10 @@
             "value" : "Copy Key"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia chiave"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "キーをコピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anahtarı Kopyala"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制Key"
+            "value" : "키 복사"
           }
         }
       }
@@ -1060,28 +520,10 @@
             "value" : "Copy to iPhone"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Copia su iPhone"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone にコピー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone'a Kopyala"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制到 iPhone"
+            "value" : "iPhone으로 복사"
           }
         }
       }
@@ -1092,31 +534,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sent to iPhone. Open Bark on your iPhone to finish copying."
+            "value" : "Sent to iPhone. Open HomePush on your iPhone to finish copying."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inviato all'iPhone. Apri Bark sul tuo iPhone per completare la copia."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone に送信しました。iPhone の Bark を開いてコピーを完了してください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone'a gönderildi. Kopyalamayı tamamlamak için iPhone'unuzdaki Bark'ı açın."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已发送到 iPhone，打开 iPhone 上的 Bark 完成复制"
+            "value" : "iPhone으로 보냈습니다. iPhone에서 HomePush를 열면 복사가 끝납니다."
           }
         }
       }
@@ -1130,28 +554,10 @@
             "value" : "Critical Alert"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avviso critico"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "緊急アラート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "kritik uyarı"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重要警告"
+            "value" : "중요 알림"
           }
         }
       }
@@ -1165,28 +571,10 @@
             "value" : "Critical Alerts Disabled"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Avvisi critici disabilitati"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "緊急アラートがオフです"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kritik uyarı izni kapalı"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重要警告权限未开启"
+            "value" : "중요 알림 꺼짐"
           }
         }
       }
@@ -1200,28 +588,10 @@
             "value" : "Critical alerts will be delivered as normal notifications"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gli avvisi critici verranno consegnati come notifiche normali"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "緊急アラートは通常の通知として配信されます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kritik uyarılar normal bildirim olarak gönderilir"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重要警告推送将降级为普通推送"
+            "value" : "중요 알림이 일반 알림으로 전달됩니다"
           }
         }
       }
@@ -1235,28 +605,10 @@
             "value" : "Body Text"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Testo del messaggio"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "本文"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gövde Metni"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "这里改成你自己的推送内容"
+            "value" : "본문"
           }
         }
       }
@@ -1270,28 +622,10 @@
             "value" : "Title"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Titolo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "タイトル"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Başlık"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "推送标题"
+            "value" : "제목"
           }
         }
       }
@@ -1305,28 +639,10 @@
             "value" : "Custom Sounds"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suoni personalizzati"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "カスタムサウンド "
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "özel sesler"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自定义铃声"
+            "value" : "내 알림음"
           }
         }
       }
@@ -1340,28 +656,10 @@
             "value" : "Default"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Default"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デフォルト"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Varsayılan"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "默认"
+            "value" : "기본"
           }
         }
       }
@@ -1375,28 +673,10 @@
             "value" : "Archive by Default"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Archivia di default"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デフォルトでアーカイブ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Varsayılan Olarak Arşivle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "默认保存"
+            "value" : "기본으로 기록 저장"
           }
         }
       }
@@ -1410,28 +690,10 @@
             "value" : "Default Sounds"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suoni predefiniti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デフォルトサウンド "
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "varsayılan sesler"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "默认铃声"
+            "value" : "기본 알림음"
           }
         }
       }
@@ -1445,28 +707,10 @@
             "value" : "Server has been deleted successfully."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Server eliminato con successo."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーが正常に削除されました。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu başarıyla silindi."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "删除成功！"
+            "value" : "서버를 삭제했습니다."
           }
         }
       }
@@ -1480,28 +724,10 @@
             "value" : "You must have at least one server configured."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Devi avere almeno un server configurato."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "少なくとも1つのサーバーを設定する必要があります。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yapılandırılmış en az bir sunucunuz olmalıdır."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不能删除，服务器至少需保留一个"
+            "value" : "서버가 최소 하나는 있어야 합니다."
           }
         }
       }
@@ -1515,28 +741,10 @@
             "value" : "Delete Server"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elimina server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーを削除"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucuyu Sil"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "删除服务器"
+            "value" : "서버 삭제"
           }
         }
       }
@@ -1547,31 +755,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deploy a self-hosted Bark server"
+            "value" : "Deploy a self-hosted HomePush server"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Installa un server Bark self-hosted"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "セルフホスト型Barkサーバーをデプロイ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu tarafı dağıtım dökümanını görüntüleyin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "查看服务端部署教程"
+            "value" : "내 서버 직접 운영하기"
           }
         }
       }
@@ -1582,31 +772,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/deploy"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#내-서버-운영"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/deploy"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/deploy"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/deploy"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/deploy"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#내-서버-운영"
           }
         }
       }
@@ -1620,28 +792,10 @@
             "value" : "Device not registered. Push service is unavailable."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dispositivo non registrato. Servizio push non disponibile."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デバイスが登録されていないため、プッシュサービスを利用できません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cihaz kaydedilmedi, gönderim hizmeti kullanılamıyor"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设备未注册成功，推送服务暂不可用"
+            "value" : "기기가 등록되지 않아 알림을 받을 수 없습니다."
           }
         }
       }
@@ -1655,28 +809,10 @@
             "value" : "Documentation"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Documentazione"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ドキュメント"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dokümantasyon"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用文档"
+            "value" : "사용 가이드"
           }
         }
       }
@@ -1690,28 +826,10 @@
             "value" : "Docs & Examples"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Documenti ed esempi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ドキュメントと例"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dokümanlar ve Örnekler"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "文档与示例"
+            "value" : "가이드와 예시"
           }
         }
       }
@@ -1725,28 +843,10 @@
             "value" : "View push parameters and FAQs"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vedi i parametri push e le FAQ"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プッシュパラメータとよくある質問を見る"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gönderim parametrelerini ve SSS'yi görüntüleyin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "查看推送参数和常见问题"
+            "value" : "보내는 방법과 자주 묻는 질문"
           }
         }
       }
@@ -1757,31 +857,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/?id=bark"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/?id=bark"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/?id=bark"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/?id=bark"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/?id=bark"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md"
           }
         }
       }
@@ -1795,28 +877,10 @@
             "value" : "Donate"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dona"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "寄付"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "bağış yapmak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "捐赠"
+            "value" : "후원"
           }
         }
       }
@@ -1830,25 +894,7 @@
             "value" : "🤝"
           }
         },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🤝"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🤝"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "🤝"
-          }
-        },
-        "zh-Hans" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "🤝"
@@ -1865,28 +911,10 @@
             "value" : "Done"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fatto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "完了"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bitti"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "完成"
+            "value" : "완료"
           }
         }
       }
@@ -1900,28 +928,10 @@
             "value" : "Encryption Settings"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Impostazioni crittografia"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "暗号化設定"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Şifreleme Ayarları"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "加密设置"
+            "value" : "암호화 설정"
           }
         }
       }
@@ -1932,31 +942,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/encryption"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#암호화-푸시"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/encryption"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/encryption"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/encryption"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/encryption"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#암호화-푸시"
           }
         }
       }
@@ -1970,28 +962,10 @@
             "value" : "Please enter %d-bytes Iv"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inserisci l'IV da %d byte"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%dバイトのIvを入力してください "
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lütfen %d-bytes Iv girin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请输入%d位Iv"
+            "value" : "%d바이트 IV를 입력하세요"
           }
         }
       }
@@ -2005,28 +979,10 @@
             "value" : "Please enter %d-bytes Key"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inserisci la chiave da %d byte"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%dバイトのKeyを入力してください"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lütfen %d-bytes Anahtar girin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请输入%d位Key"
+            "value" : "%d바이트 키를 입력하세요"
           }
         }
       }
@@ -2040,28 +996,10 @@
             "value" : "Expired"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scaduto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suresi doldu"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已过期"
+            "value" : "만료됨"
           }
         }
       }
@@ -2075,28 +1013,10 @@
             "value" : "Expires in %1$d days"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d giorni"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d日後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d gun icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d天后过期"
+            "value" : "%1$d일 후 만료"
           }
         }
       }
@@ -2110,28 +1030,10 @@
             "value" : "Expires in %1$d hours"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d ore"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d時間後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d saat icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d小时后过期"
+            "value" : "%1$d시간 후 만료"
           }
         }
       }
@@ -2145,28 +1047,10 @@
             "value" : "Expires in %1$d minutes"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d minuti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d分後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d dakika icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d分钟后过期"
+            "value" : "%1$d분 후 만료"
           }
         }
       }
@@ -2180,28 +1064,10 @@
             "value" : "Expires in %1$d months"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d mesi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$dか月後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d ay icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d月后过期"
+            "value" : "%1$d개월 후 만료"
           }
         }
       }
@@ -2215,28 +1081,10 @@
             "value" : "Expires in %1$d seconds"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d secondi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d秒後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d saniye icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d秒后过期"
+            "value" : "%1$d초 후 만료"
           }
         }
       }
@@ -2250,28 +1098,10 @@
             "value" : "Expires in %1$d years"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scade tra %1$d anni"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d年後に期限切れ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d yil icinde suresi dolacak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d年后过期"
+            "value" : "%1$d년 후 만료"
           }
         }
       }
@@ -2285,28 +1115,10 @@
             "value" : "Export"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esporta"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エクスポート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dışa Aktar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "导出"
+            "value" : "내보내기"
           }
         }
       }
@@ -2320,28 +1132,10 @@
             "value" : "FAQs"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "FAQ"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "よくある質問"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SSS"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "常见问题"
+            "value" : "자주 묻는 질문"
           }
         }
       }
@@ -2352,31 +1146,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/faq"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#자주-묻는-질문"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/faq"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/faq"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/faq"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/faq"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#자주-묻는-질문"
           }
         }
       }
@@ -2390,28 +1166,10 @@
             "value" : "Enable"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abilita"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "有効化"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Etkinleştir"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "去开启"
+            "value" : "켜기"
           }
         }
       }
@@ -2424,28 +1182,10 @@
             "value" : "Group"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gruppo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "グループ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "grup"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "分组"
+            "value" : "그룹"
           }
         }
       }
@@ -2459,28 +1199,10 @@
             "value" : "Group \"%@\" muted!"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gruppo \"%@\" silenziato!"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "グループ「%@」をミュートしました！"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\"%@\" grubunun sesi kapatıldı!"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "分组 \"%@\" 已静音"
+            "value" : "\"%@\" 그룹을 무음으로 했습니다"
           }
         }
       }
@@ -2494,28 +1216,10 @@
             "value" : "Message History"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cronologia messaggi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "メッセージ履歴"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mesaj Geçmişi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "历史消息"
+            "value" : "기록"
           }
         }
       }
@@ -2529,28 +1233,10 @@
             "value" : "Image"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Immagine"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "画像"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "resim"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "图片"
+            "value" : "이미지"
           }
         }
       }
@@ -2564,28 +1250,10 @@
             "value" : "Import"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Importa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "インポート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İçe Aktar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "导入"
+            "value" : "가져오기"
           }
         }
       }
@@ -2599,28 +1267,10 @@
             "value" : "Info"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Info"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "情報"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bilgi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "信息"
+            "value" : "정보"
           }
         }
       }
@@ -2634,28 +1284,10 @@
             "value" : "Server address is invalid."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Indirizzo del server non valido."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーアドレスが無効です。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu adresi geçersiz."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "填写的服务器无效，请重试!"
+            "value" : "서버 주소가 올바르지 않습니다."
           }
         }
       }
@@ -2669,28 +1301,10 @@
             "value" : "URL is invalid."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "URL non valido."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URLが無効です。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "URL geçersiz."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "输入的URL好像不对劲!"
+            "value" : "URL이 올바르지 않습니다."
           }
         }
       }
@@ -2704,28 +1318,10 @@
             "value" : "messages"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "messaggi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "メッセージ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "mesajlar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "条消息"
+            "value" : "개"
           }
         }
       }
@@ -2739,28 +1335,10 @@
             "value" : "Generate a random IV and send it via the iv parameter."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Genera un IV casuale e invialo tramite il parametro iv."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "IVはランダムに生成し、ivパラメータで送信してください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "IV'yi rastgele oluşturun ve iv parametresiyle birlikte gönderin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "IV 请随机生成，并放进 iv 参数一起发送。"
+            "value" : "무작위 IV를 만들어 iv 값으로 함께 보내세요."
           }
         }
       }
@@ -2774,28 +1352,10 @@
             "value" : "Must be %d bit long"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Deve essere lunga %d bit"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%dビット長でなければなりません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%d bit uzunluğunda olmalıdır"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "必须%d位"
+            "value" : "%d비트여야 합니다"
           }
         }
       }
@@ -2809,28 +1369,10 @@
             "value" : "The last hour"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ultima ora"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "過去1時間"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Son bir saat"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最近一小时"
+            "value" : "최근 1시간"
           }
         }
       }
@@ -2844,28 +1386,10 @@
             "value" : "The last month"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ultimo mese"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "過去1ヶ月"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Son Ay"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最近一个月"
+            "value" : "최근 한 달"
           }
         }
       }
@@ -2879,28 +1403,10 @@
             "value" : "Mode"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Modalità"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "モード"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mod"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "模式"
+            "value" : "모드"
           }
         }
       }
@@ -2914,28 +1420,10 @@
             "value" : "More"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Altro"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "詳細"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Daha"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更多"
+            "value" : "더 보기"
           }
         }
       }
@@ -2949,28 +1437,10 @@
             "value" : "More Actions"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Altre azioni"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "その他のアクション"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Daha Fazla İşlem"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "更多操作"
+            "value" : "더 보기"
           }
         }
       }
@@ -2984,28 +1454,10 @@
             "value" : "Mute this group for 10 Minutes"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Silenzia questo gruppo per 10 minuti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このグループを10分間ミュート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "bu grubu 10 dakikalığına sessize alın"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "10分钟内不再提醒此分组"
+            "value" : "이 그룹 10분 무음"
           }
         }
       }
@@ -3019,28 +1471,10 @@
             "value" : "Mute this group for 1 Hour"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Silenzia questo gruppo per 1 ora"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このグループを1時間ミュート"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "bu grubu 1 saatliğine sessize alın"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1小时内不再提醒此分组"
+            "value" : "이 그룹 1시간 무음"
           }
         }
       }
@@ -3054,28 +1488,10 @@
             "value" : "No permission"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nessun permesso"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "権限がありません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İzin yok"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "没有权限"
+            "value" : "권한 없음"
           }
         }
       }
@@ -3089,28 +1505,10 @@
             "value" : "Icon"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Icona"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アイコン"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İkon"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自定义推送图标（需iOS15或以上）"
+            "value" : "아이콘"
           }
         }
       }
@@ -3124,28 +1522,10 @@
             "value" : "Enable notification permission before sending a test."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abilita il permesso alle notifiche prima di inviare un test."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "テスト送信の前に通知を許可してください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test göndermeden önce bildirim iznini etkinleştirin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发送测试前请先开启通知权限。"
+            "value" : "테스트를 보내려면 먼저 알림을 허용하세요."
           }
         }
       }
@@ -3159,28 +1539,10 @@
             "value" : "Notifications Disabled"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notifiche disabilitate"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通知が許可されていません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildirim izni kapalı"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通知权限未开启"
+            "value" : "알림 꺼짐"
           }
         }
       }
@@ -3194,28 +1556,10 @@
             "value" : "Enable it to receive push notifications"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abilitale per ricevere notifiche push"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プッシュ通知を受け取るには有効にしてください"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildirim almak için etkinleştirin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "需开启以接收消息推送"
+            "value" : "알림을 받으려면 켜 주세요"
           }
         }
       }
@@ -3229,28 +1573,10 @@
             "value" : "Notifications Enabled"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notifiche abilitate"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通知が許可されています"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bildirim izni açık"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "通知权限已开启"
+            "value" : "알림 켜짐"
           }
         }
       }
@@ -3264,28 +1590,10 @@
             "value" : "You can now receive push notifications"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ora puoi ricevere notifiche push"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プッシュ通知を正常に受信できます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Artık push bildirimlerini alabilirsiniz"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "现在可以正常接收消息推送"
+            "value" : "이제 알림을 받을 수 있습니다"
           }
         }
       }
@@ -3299,28 +1607,10 @@
             "value" : "Alert Sound"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suono di notifica"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アラートサウンド"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Uyarı Sesi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "推送铃声"
+            "value" : "알림음"
           }
         }
       }
@@ -3334,28 +1624,10 @@
             "value" : "One-time donation"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Donazione una tantum"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一度きりの寄付"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "tek seferlik bağış"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一次性捐赠"
+            "value" : "1회 후원"
           }
         }
       }
@@ -3369,28 +1641,10 @@
             "value" : "openssl requires Hex encoding of manual keys and IVs, not ASCII encoding."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "openssl richiede la codifica Hex per chiavi e IV manuali, non la codifica ASCII."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "opensslでは、手動キーとIVをASCIIエンコードではなくHexエンコードする必要があります。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "openssl, manuel anahtarların ve IV'lerin ASCII kodlamasını değil, Hex kodlamasını gerektirir."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OpenSSL 要求输入的 Key 和 IV 需使用十六进制编码。"
+            "value" : "openssl에는 키와 IV를 ASCII가 아니라 16진수(Hex)로 넣어야 합니다."
           }
         }
       }
@@ -3404,28 +1658,10 @@
             "value" : "Other"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Altro"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "その他"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Diğer"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "其他"
+            "value" : "기타"
           }
         }
       }
@@ -3436,31 +1672,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/params"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#보낼-수-있는-값"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/params"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/params"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/en-us/params"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "https://bark.day.app/#/params"
+            "value" : "https://github.com/Piiziy/Bark-piiziy/blob/claude/bark-app-development-n625ef/docs/USAGE.ko.md#보낼-수-있는-값"
           }
         }
       }
@@ -3474,10 +1692,10 @@
             "value" : "Open the Watch app on your iPhone to enable notifications"
           }
         },
-        "zh-Hans" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "请在 iPhone 的 Watch App 中开启通知"
+            "value" : "iPhone의 Watch 앱에서 알림을 켜 주세요"
           }
         }
       }
@@ -3491,28 +1709,10 @@
             "value" : "Play video"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Riproduci video"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ビデオを再生"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Videoyu oynat"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "播放视频"
+            "value" : "영상 재생"
           }
         }
       }
@@ -3526,28 +1726,10 @@
             "value" : "Privacy Policy"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Privacy"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プライバシーポリシー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "gizlilik politikası"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "隐私政策"
+            "value" : "개인정보 처리방침"
           }
         }
       }
@@ -3561,28 +1743,10 @@
             "value" : "Parameters"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Parametri"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パラメータ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Parametreler"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "推送参数"
+            "value" : "보낼 수 있는 값"
           }
         }
       }
@@ -3596,28 +1760,10 @@
             "value" : "Remove"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rimuovi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "削除"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sil"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "删除"
+            "value" : "삭제"
           }
         }
       }
@@ -3631,28 +1777,10 @@
             "value" : "This will be permanently removed and cannot be undone."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verrà eliminato definitivamente e non potrà essere recuperato."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "これは永久に削除され、元に戻せません。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu kalıcı olarak kaldırılacak ve geri alınamaz."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "将永久删除并且无法恢复。"
+            "value" : "삭제하면 되돌릴 수 없습니다."
           }
         }
       }
@@ -3666,28 +1794,10 @@
             "value" : "Reset Failed"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ripristino fallito"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リセット失敗"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sıfırlama Başarısız Oldu"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置失败"
+            "value" : "초기화 실패"
           }
         }
       }
@@ -3698,31 +1808,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bark could not get a DeviceToken from the server."
+            "value" : "HomePush could not get a DeviceToken from the server."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bark non è riuscito a ottenere un DeviceToken dal server."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "BarkはサーバーからDeviceTokenを取得できませんでした。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bark sunucudan bir DeviceToken alamadı."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置失败，没有获取到 DeviceToken"
+            "value" : "서버에서 기기 토큰을 받지 못했습니다."
           }
         }
       }
@@ -3736,28 +1828,10 @@
             "value" : "Reset or Restore Key"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Reimposta o ripristina la chiave"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "キーをリセットまたは復元"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anahtarı Sıfırla veya Geri Yükle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置或还原Key"
+            "value" : "키 초기화 또는 복원"
           }
         }
       }
@@ -3771,28 +1845,10 @@
             "value" : "Leave blank to reset. Enter an old key to restore."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lascia vuoto per reimpostare. Inserisci una vecchia chiave per ripristinarla."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "空白のままにしてリセットします。古いキーを入力して復元します。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sıfırlamak için boş bırakın. Geri yüklemek için eski bir anahtar girin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重置直接点确定，还原请先输入旧的Key"
+            "value" : "비워 두면 새 키를 만들고, 예전 키를 입력하면 복원합니다."
           }
         }
       }
@@ -3806,28 +1862,10 @@
             "value" : "Do not enter or enter the old Key"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non inserire nulla o inserisci la vecchia chiave"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "古いキーを入力しないか、空白のままにします"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fazladan girmeyin veya T ve OL anahtarını girmeyin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不输入或输入旧的Key"
+            "value" : "비워 두거나 예전 키 입력"
           }
         }
       }
@@ -3841,28 +1879,10 @@
             "value" : "Restore Subscription"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ripristina abbonamento"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サブスクリプションを復元"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "aboneliği geri yükle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "恢复订阅"
+            "value" : "구독 복원"
           }
         }
       }
@@ -3876,28 +1896,10 @@
             "value" : "Ringtone"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suoneria"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "着信音"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "zil sesi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "持续响铃"
+            "value" : "벨소리"
           }
         }
       }
@@ -3911,28 +1913,10 @@
             "value" : "Ringtone Volume for Critical Alerts"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Volume suoneria per avvisi critici"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重要な警告の着信音量"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Önemli Uyarılar için Zil Sesi Seviyesi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "重要警告铃声音量"
+            "value" : "중요 알림 음량"
           }
         }
       }
@@ -3946,28 +1930,10 @@
             "value" : "Save"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Salva"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kaydet"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保存"
+            "value" : "저장"
           }
         }
       }
@@ -3981,28 +1947,10 @@
             "value" : "Saved to your photos!"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Salvato nelle tue foto!"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アルバムに保存したよ！"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Albüme kaydedildi!"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已保存到相册！"
+            "value" : "사진에 저장했습니다"
           }
         }
       }
@@ -4015,28 +1963,10 @@
             "value" : "Send notification to this device"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Invia notifica a questo dispositivo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このデバイスにプッシュ通知を送信"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu cihaza bir bildirim gönder"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发送推送到此设备"
+            "value" : "이 기기로 알림 보내기"
           }
         }
       }
@@ -4049,28 +1979,10 @@
             "value" : "Send notification to other device"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Invia notifica a un altro dispositivo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "他のデバイスにプッシュ通知を送信する"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Diğer cihazlara bildirim gönder"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发送推送到其他设备"
+            "value" : "다른 기기로 알림 보내기"
           }
         }
       }
@@ -4084,28 +1996,10 @@
             "value" : "Send Test"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Invia test"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "テスト送信"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test Gönder"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发送测试"
+            "value" : "테스트 보내기"
           }
         }
       }
@@ -4119,28 +2013,10 @@
             "value" : "Server Address"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Indirizzo del server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーアドレス"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu Adresi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器地址"
+            "value" : "서버 주소"
           }
         }
       }
@@ -4154,28 +2030,10 @@
             "value" : "Server Error"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Errore del server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーエラー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu Hatası"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器错误"
+            "value" : "서버 오류"
           }
         }
       }
@@ -4186,31 +2044,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enter the server address, e.g., https://api.day.app"
+            "value" : "Enter the server address, e.g., https://homepush-oso7gfd3mq-du.a.run.app"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inserisci l'indirizzo del server, es. https://api.day.app"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーアドレスを入力してください。例: https://api.day.app"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu adresini girin, örneğin, https://api.day.app"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "输入服务器地址，例如: https://api.day.app"
+            "value" : "서버 주소를 입력하세요. 예: https://homepush-oso7gfd3mq-du.a.run.app"
           }
         }
       }
@@ -4224,28 +2064,10 @@
             "value" : "Server List"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lista server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバーリスト"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu Listesi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器列表"
+            "value" : "서버 목록"
           }
         }
       }
@@ -4259,28 +2081,10 @@
             "value" : "Service"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Servizio"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サービス"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hizmet"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器"
+            "value" : "홈"
           }
         }
       }
@@ -4294,28 +2098,10 @@
             "value" : "Set As Default Server"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Imposta come server predefinito"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デフォルトサーバーとして設定"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "varsayılan sunucu olarak ayarla"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设为预览服务器"
+            "value" : "기본 서버로 설정"
           }
         }
       }
@@ -4329,28 +2115,10 @@
             "value" : "Set Server Name"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Imposta nome server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバー名を設定"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu Adını Ayarla"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置服务器名称"
+            "value" : "서버 이름 설정"
           }
         }
       }
@@ -4364,28 +2132,10 @@
             "value" : "Successfully set"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Impostato con successo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "正常に設定されました"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "başarıyla ayarlandı"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置成功！"
+            "value" : "설정했습니다"
           }
         }
       }
@@ -4399,28 +2149,10 @@
             "value" : "Settings"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Impostazioni"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "設定"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ayarlar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "设置"
+            "value" : "설정"
           }
         }
       }
@@ -4434,28 +2166,10 @@
             "value" : "Show less"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mostra meno"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "詳細を表示しない"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Katlamak"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "折叠"
+            "value" : "접기"
           }
         }
       }
@@ -4469,28 +2183,10 @@
             "value" : "Show QR Code"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mostra QR Code"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "QRコードを表示"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "QR Kodunu Göster"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "显示二维码"
+            "value" : "QR 코드 보기"
           }
         }
       }
@@ -4504,28 +2200,10 @@
             "value" : "Source Code"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Codice sorgente"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソースコード"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "kaynak kodu"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "开源代码"
+            "value" : "소스 코드"
           }
         }
       }
@@ -4539,28 +2217,10 @@
             "value" : "Subscribed Groups"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gruppi iscritti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "購読グループ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abone olunan gruplar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "订阅分组"
+            "value" : "구독 그룹"
           }
         }
       }
@@ -4574,28 +2234,10 @@
             "value" : "Each group shows its own icon. Tap one to see its messages."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ogni gruppo ha la sua icona. Tocca per vedere i messaggi."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "グループごとに専用のアイコンが表示されます。タップするとメッセージを表示します。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Her grubun kendi simgesi var. Mesajlarını görmek için dokunun."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "每个分组都有自己的图标，点击查看该分组的消息。"
+            "value" : "그룹마다 아이콘이 표시됩니다. 눌러서 해당 그룹의 알림을 볼 수 있습니다."
           }
         }
       }
@@ -4609,28 +2251,10 @@
             "value" : "Donation"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Donazione"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "寄付"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "bağış"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "成功捐赠"
+            "value" : "후원"
           }
         }
       }
@@ -4644,28 +2268,10 @@
             "value" : "Sync from iPhone"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sincronizza da iPhone"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone から同期"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iPhone'dan Senkronize Et"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "从 iPhone 同步"
+            "value" : "iPhone에서 가져오기"
           }
         }
       }
@@ -4676,31 +2282,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sync failed. Open Bark on your iPhone and try again."
+            "value" : "Sync failed. Open HomePush on your iPhone and try again."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sincronizzazione non riuscita. Apri Bark sul tuo iPhone e riprova."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "同期に失敗しました。iPhone で Bark を開いて再試行してください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Senkronizasyon başarısız. iPhone'unuzda Bark'ı açıp tekrar deneyin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "同步失败，请打开 iPhone 上的 Bark 后重试。"
+            "value" : "가져오지 못했습니다. iPhone에서 HomePush를 열고 다시 시도하세요."
           }
         }
       }
@@ -4714,28 +2302,10 @@
             "value" : "Failed to send test notification: %@"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Invio notifica di test fallito: %@"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "テスト通知の送信に失敗しました: %@"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test bildirimi gönderilemedi: %@"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "测试推送发送失败: %@"
+            "value" : "테스트 알림을 보내지 못했습니다: %@"
           }
         }
       }
@@ -4749,28 +2319,10 @@
             "value" : "Test notification sent"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notifica di test inviata"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "テスト通知を送信しました"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Test bildirimi gönderildi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "测试推送已发送"
+            "value" : "테스트 알림을 보냈습니다"
           }
         }
       }
@@ -4784,28 +2336,10 @@
             "value" : "Thank you for your kind support"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Grazie per il tuo supporto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ご支援ありがとうございます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "nazik desteğiniz için teşekkür ederim"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "谢谢你的慷慨支持"
+            "value" : "응원해 주셔서 감사합니다"
           }
         }
       }
@@ -4819,28 +2353,10 @@
             "value" : "%1$d hour ago"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$d ora fa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d時間前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d saat önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d小时前"
+            "value" : "%1$d시간 전"
           }
         }
       }
@@ -4854,28 +2370,10 @@
             "value" : "Just now"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Adesso"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "たった今"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Az önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "刚刚"
+            "value" : "방금"
           }
         }
       }
@@ -4889,28 +2387,10 @@
             "value" : "%1$d minute ago"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$d minuto fa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d分前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d dakika önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d分钟前"
+            "value" : "%1$d분 전"
           }
         }
       }
@@ -4924,28 +2404,10 @@
             "value" : "%1$d hour %2$d minutes ago"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$d ore %2$d minuti fa"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d時間%2$d分前"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d saat %2$d dakika önce"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$d小时%2$d分钟前"
+            "value" : "%1$d시간 %2$d분 전"
           }
         }
       }
@@ -4959,28 +2421,10 @@
             "value" : "Today"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oggi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今日"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bugün"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今天"
+            "value" : "오늘"
           }
         }
       }
@@ -4994,28 +2438,10 @@
             "value" : "Today and yesterday"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Oggi e ieri"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "今日と昨日"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dün ve Bugün"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "昨天和今天"
+            "value" : "오늘과 어제"
           }
         }
       }
@@ -5029,28 +2455,10 @@
             "value" : "Toggle"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Attiva/disattiva"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "表示切替"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Görünümü Değiştir"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "切换"
+            "value" : "전환"
           }
         }
       }
@@ -5063,28 +2471,10 @@
             "value" : "TTL (seconds)"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "TTL (secondi)"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TTL（秒）"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TTL (saniye)"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "有效期（秒）"
+            "value" : "보관 시간(초)"
           }
         }
       }
@@ -5098,28 +2488,10 @@
             "value" : "Unknown Status"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stato sconosciuto"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不明なステータス"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bilinmeyen Durum"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "未知"
+            "value" : "알 수 없음"
           }
         }
       }
@@ -5133,28 +2505,10 @@
             "value" : "Upload Sound"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Carica suono"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サウンドをアップロード"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ses yükle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "上传铃声"
+            "value" : "알림음 올리기"
           }
         }
       }
@@ -5168,28 +2522,10 @@
             "value" : "Please convert the sound file to caf format, and make sure it's no longer than 30 seconds."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Converti il file audio in formato caf e assicurati che non superi i 30 secondi."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サウンドファイルをcaf形式に変換し、30秒以内であることを確認してください。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "lütfen ses dosyasını TOC AF formatına dönüştürün ve SU GYO'ları 30 saniyeden uzun olmayacak şekilde işaretleyin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请先将铃声转换成 caf 格式，时长不超过 30 秒。"
+            "value" : "알림음은 caf 형식으로 변환하고 30초 이내로 만들어 주세요."
           }
         }
       }
@@ -5203,28 +2539,10 @@
             "value" : "convert the sound file to caf format"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "converti il file audio in formato caf"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サウンドファイルをcaf形式に変換"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ses dosyasını TOC AF formatına dönüştürün"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "转换成 caf 格式"
+            "value" : "caf 형식으로 변환"
           }
         }
       }
@@ -5238,28 +2556,10 @@
             "value" : "Usage Examples"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esempi d'uso"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用例"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kullanım Örnekleri"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "使用示例"
+            "value" : "사용 예시"
           }
         }
       }
@@ -5273,28 +2573,10 @@
             "value" : "User Agreement"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Termini di servizio"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "利用規約"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "kullanıcı sözleşmesi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用户协议"
+            "value" : "이용 약관"
           }
         }
       }
@@ -5308,28 +2590,10 @@
             "value" : "Version"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Versione"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "バージョン"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sürüm"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "版本"
+            "value" : "버전"
           }
         }
       }
@@ -5343,28 +2607,10 @@
             "value" : "Video"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Video"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ビデオ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Video"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "视频"
+            "value" : "영상"
           }
         }
       }
@@ -5378,28 +2624,10 @@
             "value" : "View all %d messages"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vedi tutti i %d messaggi"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "すべての%d件のメッセージを表示"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tüm %d mesajı görüntüle"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "查看全部%d条消息"
+            "value" : "알림 %d개 모두 보기"
           }
         }
       }
@@ -5412,28 +2640,10 @@
             "value" : "Choose which message group this widget should show."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Scegli quale gruppo di messaggi mostrare in questo widget."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "このウィジェットに表示するメッセージグループを選択してください"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu widget’ın hangi mesaj grubunu göstereceğini seçin"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "选择此小组件应显示的消息分组"
+            "value" : "위젯에 표시할 그룹을 고르세요."
           }
         }
       }
@@ -5447,28 +2657,10 @@
             "value" : "Recent Messages"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Messaggi recenti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最近のメッセージ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Son Mesajlar"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "最近消息"
+            "value" : "최근 알림"
           }
         }
       }
@@ -5479,31 +2671,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "See the latest items from Bark history at a glance."
+            "value" : "See the latest items from HomePush history at a glance."
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vedi a colpo d'occhio gli ultimi elementi della cronologia di Bark."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Barkの履歴にある最新項目をひと目で確認できます。"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bark gecmisindeki en son ogeleri bir bakista gorun."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "快速查看 Bark 历史中的最新消息。"
+            "value" : "HomePush 최근 알림을 한눈에 봅니다."
           }
         }
       }
@@ -5517,28 +2691,10 @@
             "value" : "New notifications will appear here when they arrive"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Le nuove notifiche appariranno qui quando arriveranno"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新しい通知を受信するとここに表示されます"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yeni bildirimler geldiginde burada gorunur"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "当收到新推送时会显示在这里"
+            "value" : "새 알림이 오면 여기에 표시됩니다"
           }
         }
       }
@@ -5552,28 +2708,10 @@
             "value" : "No New Messages"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nessun nuovo messaggio"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新しいメッセージはありません"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yeni Mesaj Yok"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无新消息"
+            "value" : "새 알림 없음"
           }
         }
       }
@@ -5587,28 +2725,10 @@
             "value" : "Deployment finished successfully"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Distribuzione completata con successo"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "デプロイが正常に完了しました"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dagitim basariyla tamamlandi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "部署已成功完成"
+            "value" : "현관문이 열렸어요"
           }
         }
       }
@@ -5622,28 +2742,10 @@
             "value" : "Server"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Server"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "サーバー"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sunucu"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "服务器"
+            "value" : "집"
           }
         }
       }
@@ -5657,28 +2759,10 @@
             "value" : "Build completed"
           }
         },
-        "it" : {
+        "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Build completata"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ビルド完了"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Derleme tamamlandi"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "构建完成"
+            "value" : "현관"
           }
         }
       }

@@ -172,7 +172,7 @@ class ServerManager: NSObject {
                 guard let key = json["data", "key"].string,
                       !key.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
                 else {
-                    return .failure(.Error(info: "服务器未返回设备 key"))
+                    return .failure(.Error(info: "서버가 기기 키를 돌려주지 않았습니다"))
                 }
                 return .success(key)
             case .failure(let error):

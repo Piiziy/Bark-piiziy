@@ -1320,10 +1320,7 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
-				tr,
-				ja,
-				it,
+				ko,
 			);
 			mainGroup = 0661A536204FDA4100965E4E;
 			packageReferences = (
@@ -2663,7 +2660,7 @@
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BarkWatch/NotificationService/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bark Watch Notifications";
+				INFOPLIST_KEY_CFBundleDisplayName = "HomePush Watch Notifications";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2699,7 +2696,7 @@
 				DEVELOPMENT_TEAM = 2M7Z8SF8B4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BarkWatch/NotificationService/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bark Watch Notifications";
+				INFOPLIST_KEY_CFBundleDisplayName = "HomePush Watch Notifications";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

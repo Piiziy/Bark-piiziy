@@ -136,7 +136,7 @@ class MessageSettingsViewModel: ViewModel, ViewModelType {
                 title: "sourceCode".localized,
                 text: nil,
                 textColor: nil,
-                url: URL(string: "https://github.com/Finb/Bark")
+                url: URL(string: "https://github.com/Piiziy/Bark-piiziy")
             ))
             
             settings.append(

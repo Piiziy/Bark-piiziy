@@ -20,7 +20,7 @@ extension Observable where Element: Moya.Response {
                 if (200...209) ~= response.statusCode {
                     return .success(response)
                 } else {
-                    return .failure(ApiError.Error(info: "网络错误"))
+                    return .failure(ApiError.Error(info: "네트워크 오류"))
                 }
             }
     }
@@ -71,7 +71,7 @@ extension Observable where Element: Moya.Response {
                 if let model: T = self.resultFromJSON(json: rootJson) {
                     return .success(model)
                 } else {
-                    return .failure(ApiError.Error(info: "json 转换失败"))
+                    return .failure(ApiError.Error(info: "서버 응답을 해석하지 못했습니다"))
                 }
             case .failure(let error):
                 return .failure(error)
@@ -90,14 +90,14 @@ extension Observable where Element: Moya.Response {
                 }
                 var result = [T]()
                 guard let jsonArray = rootJson.array else {
-                    return .failure(ApiError.Error(info: "Root Json 不是 Array"))
+                    return .failure(ApiError.Error(info: "서버 응답 형식이 올바르지 않습니다"))
                 }
                 
                 for json in jsonArray {
                     if let jsonModel: T = self.resultFromJSON(json: json) {
                         result.append(jsonModel)
                     } else {
-                        return .failure(ApiError.Error(info: "json 转换失败"))
+                        return .failure(ApiError.Error(info: "서버 응답을 해석하지 못했습니다"))
                     }
                 }
                 

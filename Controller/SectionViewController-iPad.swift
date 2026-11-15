@@ -35,7 +35,7 @@ class SectionViewController_iPad: BaseViewController<SectionViewModel>, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Bark"
+        self.title = "HomePush"
         navigationItem.largeTitleDisplayMode = .automatic
     }
     
